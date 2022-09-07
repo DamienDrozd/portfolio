@@ -1,0 +1,33 @@
+.title {
+    align-self: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.contact{
+    align-self: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    color:#FFC300;
+}
+
+.form-group{
+    margin-bottom: 2%;
+}
+
+.blue{
+    color: #003566;
+}
+
+.btn{
+    color: #003566;
+    background-color: #FFC300;
+    
+}
+
+.form-control{
+    background-color: #000814;
+    color: #FFFF;
+}

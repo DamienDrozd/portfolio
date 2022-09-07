@@ -1,0 +1,89 @@
+
+
+.profile{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.resume{
+    align-self: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 15%;
+    font-size: 1.5em;
+}
+
+.competences{
+    display: flex;
+    justify-content: center;
+}
+
+.card-skills{
+    height: 100%;
+    width: 20%;
+    display: flex;
+}
+
+.experience{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+
+.table-bio{
+    width: 100%;
+}
+
+.right-column{
+    text-align: right;
+}
+
+.newLign{
+    height: 300px;
+    vertical-align: top;
+}
+
+.technique{
+    align-self: center;
+    justify-content: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    /* font-size: 1.5em; */
+    margin-bottom: 5%;
+}
+
+.titreSecondaire{
+    font-size: 4em;
+    margin-bottom: 3%;
+    margin-top:5%;
+}
+
+.parag{
+    font-size: 1.5em;
+}
+
+.date{
+    font-size: 1.5em;
+}
+
+*{
+    background-color: #000814
+}
+
+.yellow{
+    color: #FFC300;
+}
+
+.white{
+    color: #FFFF;
+}
+
+.title-text{
+    margin-left: 3%;
+}

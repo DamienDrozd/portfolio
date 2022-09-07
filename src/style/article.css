@@ -1,0 +1,41 @@
+.texte{
+    font-family: "Verdana", Times, serif;
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 0 10% 0 10%;
+    padding: 0 10px 0 10px;
+    color: #FFFF;
+    margin-bottom: 5%;
+}
+
+.title {
+    align-self: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.paragraphe{
+    margin-bottom: 30px;
+    margin-top:30px
+}
+
+.image{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-articles{
+    align-self: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    justify-content: space-around;
+    display:flex;
+}
+
+.btn-warning {
+    width: 20%;
+    height: 3em;
+    font-size: 1.2em;
+}
