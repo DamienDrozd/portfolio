@@ -73,7 +73,7 @@ function About() {
     <div className="App">
       <NavBar />
       <div className="profile">
-        <img src={photo} width="15%"/>
+        <img src={photo} alt="profile picture" width="15%"/>
         <div className="title-text">
           <h1 className="yellow">Damien Drozd</h1>
           <h2 className="white">Developpeur web 3.0</h2>
@@ -93,7 +93,7 @@ function About() {
         <div className="card card-skills">
           <div class="card-body skillname" onclick="() => setCompetencesId(1)">
             <h3 className="yellow">FrontEnd</h3>
-            <img src={frontend} width="60%"/> <br/>
+            <img src={frontend} alt="frontend" width="60%"/> <br/>
             <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(0))}>Voir plus</button>
           </div>
           
@@ -101,7 +101,7 @@ function About() {
         <div className="card card-skills">
           <div class="card-body skillname">
             <h3 className="yellow">Blockchain</h3>
-            <img src={blockchain} width="70%"/> <br/>
+            <img src={blockchain} alt="blockchain" width="70%"/> <br/>
             <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(1))}>Voir plus</button>
           </div>
           
@@ -109,7 +109,7 @@ function About() {
         <div className="card card-skills">
           <div class="card-body skillname">
             <h3 className="yellow">Backend</h3>
-            <img src={backend} width="60%"/> <br/>
+            <img src={backend} alt="backend" width="60%"/> <br/>
             <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(2))}>Voir plus</button>
           </div>
         </div>
@@ -223,3 +223,4 @@ function About() {
 }
 
 export default About;
+ 
