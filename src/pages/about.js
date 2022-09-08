@@ -5,7 +5,7 @@ import cv from "../media/Drozd_Damien_CV_FullStack.jpg";
 import frontend from "../media/frontend.svg";
 import backend from "../media/backend.svg";
 import blockchain from "../media/bitcoin.svg";
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 
 function About() {
@@ -73,7 +73,7 @@ function About() {
     <div className="App">
       <NavBar />
       <div className="profile">
-        <img src={photo} alt="profile picture" width="15%"/>
+        <img src={photo} alt="profile" width="15%"/>
         <div className="title-text">
           <h1 className="yellow">Damien Drozd</h1>
           <h2 className="white">Developpeur web 3.0</h2>
@@ -94,7 +94,7 @@ function About() {
           <div class="card-body skillname" onclick="() => setCompetencesId(1)">
             <h3 className="yellow">FrontEnd</h3>
             <img src={frontend} alt="frontend" width="60%"/> <br/>
-            <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(0))}>Voir plus</button>
+            <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(0), [disableButton])}>Voir plus</button>
           </div>
           
         </div>
@@ -102,7 +102,7 @@ function About() {
           <div class="card-body skillname">
             <h3 className="yellow">Blockchain</h3>
             <img src={blockchain} alt="blockchain" width="70%"/> <br/>
-            <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(1))}>Voir plus</button>
+            <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(1) , [disableButton])}>Voir plus</button>
           </div>
           
         </div>
@@ -110,7 +110,7 @@ function About() {
           <div class="card-body skillname">
             <h3 className="yellow">Backend</h3>
             <img src={backend} alt="backend" width="60%"/> <br/>
-            <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(2))}>Voir plus</button>
+            <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(2), [disableButton])}>Voir plus</button>
           </div>
         </div>
       </div>
