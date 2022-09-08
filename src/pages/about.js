@@ -10,7 +10,7 @@ import React, { useState } from 'react';
 
 function About() {
   
-  const [competencesId, setCompetencesId] = useState(4);
+  const [competencesId, setCompetencesId] = useState(0);
 
   var tab = [
     <div class="card cardcompetences" >
@@ -67,6 +67,14 @@ function About() {
     <></>
   ]
 
+  function disableButton(id){
+    document.getElementById("bouton0").disabled = false;
+    document.getElementById("bouton1").disabled = false;
+    document.getElementById("bouton2").disabled = false;
+    document.getElementById("bouton"+id).disabled = true;
+  }
+  // 
+
 
 
   return (
@@ -94,7 +102,7 @@ function About() {
           <div class="card-body skillname" onclick="() => setCompetencesId(1)">
             <h3 className="yellow">FrontEnd</h3>
             <img src={frontend} alt="frontend" width="60%"/> <br/>
-            <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(0), [disableButton])}>Voir plus</button>
+            <button type="button"  id="bouton0"  class="btn btn-warning btn-skills" onClick={() => {setCompetencesId(0); disableButton(0);}}>Voir plus</button>
           </div>
           
         </div>
@@ -102,7 +110,7 @@ function About() {
           <div class="card-body skillname">
             <h3 className="yellow">Blockchain</h3>
             <img src={blockchain} alt="blockchain" width="70%"/> <br/>
-            <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(1) , [disableButton])}>Voir plus</button>
+            <button type="button" id="bouton1" class="btn btn-warning btn-skills" onClick={() => {setCompetencesId(1); disableButton(1);}}>Voir plus</button>
           </div>
           
         </div>
@@ -110,7 +118,7 @@ function About() {
           <div class="card-body skillname">
             <h3 className="yellow">Backend</h3>
             <img src={backend} alt="backend" width="60%"/> <br/>
-            <button type="button" class="btn btn-warning btn-skills" onClick={() => (setCompetencesId(2), [disableButton])}>Voir plus</button>
+            <button type="button" id="bouton2" class="btn btn-warning btn-skills" onClick={() => {setCompetencesId(2); disableButton(2);}}>Voir plus</button>
           </div>
         </div>
       </div>
