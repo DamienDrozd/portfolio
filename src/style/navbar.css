@@ -1,5 +1,7 @@
-.navbar{
+.nav{
     background-color: #000814;
+    margin-right: 5%;
+    margin-left: 3%;
 }
 
 .nav-link{
@@ -11,6 +13,10 @@
 .navbar-brand{
     color: #FFC300;
     background-color: #000814;
+}
+
+.container{
+    position: sticky;
 }
 
 

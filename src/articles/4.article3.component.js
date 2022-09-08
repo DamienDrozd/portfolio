@@ -1,14 +1,15 @@
 import React, { Component, useState } from "react";
-import image1 from "../media/Image18.jpg";
-import image2 from "../media/Image19.jpg";
-import image3 from "../media/Image20.jpg";
-import image4 from "../media/Image21.jpg";
-import image5 from "../media/Image22.png";
-import image6 from "../media/Image23.png";
-import image7 from "../media/Image24.png";
-import image8 from "../media/Image25.png";
-import image9 from "../media/Image26.png";
-import image10 from "../media/Image27.png";
+import image1 from "../media/image018.jpg";
+import image2 from "../media/image019.jpg";
+import image3 from "../media/image020.jpg";
+import image4 from "../media/image021.jpg";
+import image5 from "../media/image022.png";
+import image6 from "../media/image023.png";
+import image7 from "../media/image024.png";
+import image8 from "../media/image025.png";
+import image9 from "../media/image026.png";
+import image10 from "../media/image027.png";
+import gif1 from "../media/Gif2.gif";
 
 
 export default function Article4() {
@@ -22,22 +23,22 @@ export default function Article4() {
                         L’exemple le plus parlant est axii infinity : ce jeu est un clone de Pokémon basé sur la blockchain. Pour jouer à ce jeu il vous faudra acheter un premier monstre en NFT puis vous pourrez gagner de l’argent en gagnant des combats, il y a donc un intérêt financier à l’acheter. Le jeu rapporte de l’argent et le NFT est rentabilisé. De plus cela permet de financer le jeu.<br/>
                         L’autre manière de créer de l’engouement est de vendre un projet artistique. Le créateur Beeple arrive à vendre des NFTs à plusieurs millions d’euros en étant un artiste connu.<br/>
                         <div className="image">
-                            <img src={image1} alt="image1" width="30%"/>
+                            <img src={image1} alt="image1" width="100%"/>
                             <p></p>
                         </div>
                     </p>
                     <p>
                         Pour tenter d’attirer la communauté de l’artiste nous avons pensé à un moyen de la faire de la promo sur ses réseaux sociaux, Samuel m’a emmené faire le tour de Paris pour prendre en photo la voiture dans différents endroits grâce à la réalité augmentée. Au début j’ai pensé à utiliser un filtre Instagram, l’application d’Instagram, spark AR studio est assez simple à utiliser mais le résultat n’était pas celui que j’espérai. Finalement Kevin de l’équipe a découvert qu’avec les derniers iPhones, il est possible d’utiliser des fichiers 3D en réalité augmentée très simplement. Nous avons utilisé cette méthode et nous avons posté les images sur Instagram. <br/>
                         <div className="image">
-                        <img src={image2} alt="image2" width="30%"/>
+                        <img src={image2} alt="image2" width="50%"/>
                         <p></p>
                     </div>
                     <div className="image">
-                        <img src={image3} alt="image3" width="30%"/>
+                        <img src={image3} alt="image3" width="50%"/>
                         <p></p>
                     </div>
                     <div className="image">
-                        <img src={image4} alt="image4" width="30%"/>
+                        <img src={image4} alt="image4" width="50%"/>
                         <p></p>
                     </div>
                     </p>
@@ -50,7 +51,10 @@ export default function Article4() {
                         Ensuite il faut réaliser un site qui va permettre de mint gratuitement les NFTs.<br/>
                         L’avantage avec ce site est que les acheteurs iront eux même faire le mint du NFT, ils nous achètent le NFT au prix convenu et de plus ils payent les frais de mint. Ainsi dans le cas ou aucun NFT n’est vendu, nous n’aurons payé aucuns frais de gaz.<br/>
                         Pour le design, Samuel a imaginé ce logo de Nomad Gallery en feu, c’est ce logo que nous allons mettre à disposition en NFT sur le site de freemint. Pour les metadata j’utilise le générateur réalisé précédemment.<br/>
-                        {/* gif 1 */}
+                        <div className="image">
+                            <img src={gif1} alt="gif1" width="50%"/>
+                            <p></p>
+                        </div>
                     </p>
                     <p>
                         Finalement le smart contract est assez similaire au précedent, j’y ajoute des fonctions utilitaires. <br/>
@@ -58,7 +62,7 @@ export default function Article4() {
                         Cette fois ci je vais déployer le NFT avec JavaScript en utilisant la bibliothèque HardHat, ça simplifie un peu le processus de Remix. <br/>
                         Il suffit de lancer ce script pour pouvoir déployer le NFT. Ensuite le script nous renvoie l’adresse du contrat. <br/>
                         <div className="image">
-                            <img src={image5} alt="image5" width="30%"/>
+                            <img src={image5} alt="image5" width="50%"/>
                             <p></p>
                         </div>
                     </p>
@@ -73,21 +77,21 @@ export default function Article4() {
                         -	L’adresse des metadatas uploadés sur IPFS<br/>
                         Ensuite elle retourne un objet contenant ces trois valeurs dans le hook d’état.<br/>
                         <div className="image">
-                            <img src={image6} alt="image6" width="30%"/>
+                            <img src={image6} alt="image6" width="50%"/>
                             <p></p>
                     </div>
                     </p>
                     <p>
                         On affiche toutes ces valeurs dans le code HTML du composant. Le bouton va déclencher la fonction de mint. <br/>
                         <div className="image">
-                            <img src={image7} alt="image7" width="30%"/>
+                            <img src={image7} alt="image7" width="50%"/>
                             <p></p>
                         </div>
                     </p>
                     <p>
                         La fonction de mint permet comme son nom l’indique de mint un NFT. Elle va utiliser la bibliothèque Etherjs pour récupérer les informations metamask de l’utilisateur puis lui proposer de mint le NFT, faisant ainsi le lien entre le metamask de l’utilisateur et la fonction mint du smart contract.<br/>
                         <div className="image">
-                            <img src={image8} alt="image8" width="30%"/>
+                            <img src={image8} alt="image8" width="50%"/>
                             <p></p>
                         </div>
                     </p>
@@ -95,14 +99,14 @@ export default function Article4() {
                         Ensuite j’ai dû trouver un moyen d’héberger le site, si possible gratuitement. J’ai utilisé FireBase pour cela :<br/>
                         Firebase est  un ensemble de services d'hébergement pour n'importe quel type d'application. Ce service permet d’héberger des bases de données en NoSQL gratuitement mais également des sites web. <br/>
                         <div className="image">
-                            <img src={image9} alt="image9" width="30%"/>
+                            <img src={image9} alt="image9" width="40%"/>
                             <p></p>
                         </div>
                     </p>
                     <p>
                         Voilà le site de mint est maintenant prêt à être utilisé.  <br/>
                         <div className="image">
-                            <img src={image10} alt="image10" width="30%"/>
+                            <img src={image10} alt="image10" width="100%"/>
                             <p></p>
                         </div>
                     </p>

@@ -1,14 +1,15 @@
 import React, { Component, useState } from "react";
-import image1 from "../media/Image3.jpg";
-import image2 from "../media/Image4.jpg";
-import image3 from "../media/Image5.png";
-import image4 from "../media/Image6.png";
-import image5 from "../media/Image7.png";
-import image6 from "../media/Image8.png";
-import image7 from "../media/Image9.png";
-import image8 from "../media/Image10.png";
-import image9 from "../media/Image11.png";
-import image10 from "../media/Image12.png";
+import image1 from "../media/image003.jpg";
+import image2 from "../media/image004.jpg";
+import image3 from "../media/image005.png";
+import image4 from "../media/image006.png";
+import image5 from "../media/image007.png";
+import image6 from "../media/image008.png";
+import image7 from "../media/image009.png";
+import image8 from "../media/image010.png";
+import image9 from "../media/image011.png";
+import image10 from "../media/image012.png";
+import gif1 from "../media/gif1.gif";
 
 export default function Article2() {
     return(
@@ -20,13 +21,16 @@ export default function Article2() {
                         Pour ma première mission, je devais réaliser la collection de NFT à partir du fichier 3D que l’équipe m’avait fourni.
                     </p>
                     <div className="image">
-                        <img src={image1} alt="image1" width="30%"/>
+                        <img src={image1} alt="image1" width="70%"/>
                         <p></p>
                     </div>
-                    {/* gif 1 */}
+                    <div className="image">
+                        <img src={gif1} alt="gif1" width="70%"/>
+                        <p></p>
+                    </div>
 
                     <div className="image">
-                        <img src={image2} alt="image2" width="30%"/>
+                        <img src={image2} alt="image2" width="70%"/>
                         <p></p>
                     </div>
                 </div>
@@ -34,7 +38,28 @@ export default function Article2() {
                     <p>
                         Pour réaliser la mission qui m’a été donné je commence par effectuer des recherches pour la création d’un NFT. Je suis tombé sur plusieurs solutions :
                     </p>
-                    {/* tableau */}
+                    <table className="tableau">
+                        <tr className="tableau ">
+                            <th className="tableau"></th>
+                            <th className="tableau">Solution 1 : <br/>Utiliser une solution applicable en l’état (exemple : création via OpenSea)</th>
+                            <th className="tableau">Solution 2 : <br/>Créer notre propre NFT Création des metadatas du NFT et du smart contract</th>
+                        </tr>
+                        <tr className="tableau ">
+                            <td className="tableau">Inconvénient: </td>
+                            <td className="tableau">
+                                Le NFT n’est pas réellement créée avant son achat et on ne peut pas l’exporter sur d’autres plateformes, il ne nous appartient pas réellement. 
+                                Le terme utilisé est « Lazy mint »
+                            </td>
+                            <td className="tableau">
+                                Les frais de mint sont chers sur la blockchain Ether en ce moment (une autre solution serait d’utiliser la blockchain polygone ou d’attendre la sortie de Ethereum 2.0) 
+                            </td>
+                        </tr>
+                        <tr className="tableau ">
+                            <td className="tableau">Avantages: </td>
+                            <td className="tableau">Les frais de mint (création) sont au frais de l’acheteur donc si le NFT ne se vend pas, pas besoin de payer</td>
+                            <td className="tableau">Le NFT nous appartient totalement.</td>
+                        </tr>
+                    </table>
                     <p>
                         J’ai finalement opté pour la deuxième option qui nous permet d’être plus libre avec la création des NFTs, et également d’automatiser leurs créations, ce que nous verrons dans un second temps.
                     </p>
@@ -56,16 +81,71 @@ export default function Article2() {
                     <p> 
                         Voici le fichier que j’ai utilisé pour réaliser les metadata. <br/>
                         <div className="image">
-                            <img src={image3} alt="image3" width="30%"/>
+                            <img src={image3} alt="image3" width="60%"/>
                             <p></p>
                         </div>
                         On peut y retrouver les paramètres de notre NFT : <br/>
-                        {/* tableau 2 */}
+                        
+                        <table className="tableau">
+                            <tr className="tableau ">
+                                <th className="tableau">Paramètres :</th>
+                                <th className="tableau">Description :</th>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">Original_creator </td>
+                                <td className="tableau">Adresse metamask du créateur du NFT, ici j’ai mis l’adresse du compte de la Nomad Gallery.</td>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">image </td>
+                                <td className="tableau">Lien de l’image uploadé sur IPFS (InterPlanetary File System), j’expliquerai le fonctionnement d’IPFS juste après.</td>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">Animation_url</td>
+                                <td className="tableau">Lien du gif représentant le NFT sur IPFS</td>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">TokenId </td>
+                                <td className="tableau">Numéro de série du NFT</td>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">Name </td>
+                                <td className="tableau">Nom du NFT</td>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">Description </td>
+                                <td className="tableau">Description du NFT</td>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">Attributes </td>
+                                <td className="tableau">Tous les attributs particuliers du NFT. Ici on a juste besoin d’ajouter un paramètre de couleur qui va permettre de différencier la voiture Originale de la version Or.</td>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">File_key </td>
+                                <td className="tableau">Lien du fichier téléchargeable de la voiture en haute qualité sur IPFS.</td>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">Edition_total </td>
+                                <td className="tableau">Nombre total de NFTs dans la collection.</td>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">Royalty_amount </td>
+                                <td className="tableau">Taux de droits d’auteurs qui nous seront reversés à chaque vente de NFTs.</td>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">Copyright_transfer </td>
+                                <td className="tableau">Nous ne voulons pas vendre les droits d’exploitations du NFTs donc on laisse ce paramètre sur false</td>
+                            </tr>
+                            <tr className="tableau ">
+                                <td className="tableau">Resellable </td>
+                                <td className="tableau">Le NFT peut effectivement être revendu.</td>
+                            </tr>
+                        </table>
+
                     </p>
                     <p> 
                         Les metadata ainsi que les medias des NFT sont hébergés hors de la blockchain, sur un service similaire à Google Drive. Pour les NFTs on a tendance à utiliser IPFS est un système distribué de fichiers pair à pair qui ne dépend pas de serveurs centralisés. L’objectif de ce système est de décentraliser la distribution de fichiers. <br/>
                         <div className="image">
-                            <img src={image4} alt="image4" width="30%"/>
+                            <img src={image4} alt="image4" width="100%"/>
                             <p></p>
                         </div>
                          Ce système a également pour objectif de résoudre les problèmes de http (Tous les fichiers sont centralisés dans les serveurs et sont vulnérables aux crashs et aux attaques DDOS. Les conséquences de ces vulnérabilités sont les vols de données, les fuites ou bien la perte de ces données). <br/>
@@ -74,7 +154,7 @@ export default function Article2() {
                     <p>
                         Pour ajouter des fichiers sur IPFS, il faut télécharger l’application IPFS puis ajouter les fichiers que l’on souhaite dessus. Ensuite il faut récupérer l’adresse des fichiers uploadés et l’ajouter dans les metadata. <br/>
                         <div className="image">
-                            <img src={image5} alt="image5" width="30%"/>
+                            <img src={image5} alt="image5" width="100%"/>
                             <p></p>
                         </div>
                         Vous pouvez retrouver plus d’informations à propos d’ipfs <a href="https://cryptoast.fr/interplanetary-file-system-ipfs-reseau-partage-fichiers-web-3/" >ici</a> <br/>
@@ -89,7 +169,7 @@ export default function Article2() {
                         Nous allons utiliser la testnet Rinkeby <br/>
                         Pour utiliser la blockchain de test, il faut récupérer des Ethers de test.  <br/>
                         <div className="image">
-                            <img src={image6} alt="image6" width="30%"/>
+                            <img src={image6} alt="image6" width="50%"/>
                             <p></p>
                         </div>
                     </p>
@@ -102,6 +182,8 @@ export default function Article2() {
                         Il faut donc créer le smart contract puis le déployer sur la blockchain. <br/>
                         Etant donné que les NFT utilisent la blockchain Ethereum pour fonctionner, le smart contract doit être rédigé en solidity. <br/>
                         Solidity est un langage de programmation, de type orienté objet, tout comme peuvent l'être le Javascript, le Python ou le C++. Il permet le développement de smart contract sur la blockchain Ethereum. <br/>
+                    </p>
+                    <p>   
                         Pour ce projet j’ai donc dû apprendre les bases de solidity. Il y a un cours gratuit pour solidity très simple à prendre en main, il s’agit de <a href="https://cryptozombies.io/fr/">crypto zombie</a>. J’ai donc appris les bases sur ce site ce qui m’a permis de créer le smart contract du NFT, je me également inspiré des autres contracts de NFT que l’on peut trouver sur internet ou sur le site de Etherscan. En effet la plupart des gens qui réalisent des projet crypto mettent en libre accès leurs smarts contract sur Etherscan.  <br/>
                         Pour notre NFT, nous allons utiliser le token ERC-721. Le token ERC-721 a pour caractéristique le fait d’être unique, c’est ce qui fait la valeur du NFT. De plus ce token est impossible à contrefaire. Il a également la possibilité d’avoir une valeur différente d’un autre token du même smart contract. Cela permet par de créer une collection de NFTs avec plusieurs variantes d’artworks afin de créer de la rareté dans les NFTs par exemple. Cette caractéristique n’existe pas dans le cadre du token ERC-20, c’est pour cela qu’il faut bien choisir le token pour ce type de Projet. <br/>
 
@@ -111,7 +193,7 @@ export default function Article2() {
                             -	Le constructor est la partie qui va permettre de créer la collection de NFTs à partir du contract, on y retrouve tous les paramètres du NFT qui vont être entrés lors de la création du déploiement du contrat. <br/>
                             -	La fonction de mint permet de créer des NFT. Le lanceur du contract peut choisir de mint lui-même les NFT ou bien de laisser à l’acheteur  mint et donc de le lui laisser en payer les frais. <br/>
                         <div className="image">
-                            <img src={image7} alt="image7" width="30%"/>
+                            <img src={image7} alt="image7" width="50%"/>
                             <p></p>
                         </div>
 
@@ -120,14 +202,14 @@ export default function Article2() {
                         Une fois le contract créé, il faut le compiler sur l’IDE Remix, Remix est un IDE en ligne qui permet de compiler des smarts contracts sur la blochain Ethereum. <br/>
                         Ici on va le compiler sur la blockchain de test .  <br/>
                         <div className="image">
-                            <img src={image8} alt="image8" width="30%"/>
+                            <img src={image8} alt="image8" width="100%"/>
                             <p></p>
                         </div>
                     </p>
                     <p>
                         Ensuite il faut déployer les NFTs sur la blockchain en entrant les paramètres du NFT (Le nom de la collection, le lien des fichiers metadatas uploadés sur IPFS et le symbole du NFT). <br/>
                         <div className="image">
-                            <img src={image9} alt="image9" width="30%"/>
+                            <img src={image9} alt="image9" width="100%"/>
                             <p></p>
                         </div>
                     </p>
@@ -135,7 +217,7 @@ export default function Article2() {
                         Puis il faut valider la transaction sur metamask et voilà, le NFT est déployé. <br/>
                         On peut ensuite visualiser la transaction sur Etherscan et voir le NFT sur le profil OpenSea lié au metamask. <br/>
                         <div className="image">
-                            <img src={image10} alt="image10" width="30%"/>
+                            <img src={image10} alt="image10" width="100%"/>
                             <p></p>
                         </div>
 

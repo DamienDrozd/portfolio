@@ -6,16 +6,31 @@
     align-items: center;
     justify-content: center;
     margin-top: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 25%;
+}
+
+.skillname {
+    justify-content: center;
+    text-align: center;
+
+}
+
+.solid{
+  border-top: 3px solid #FFFF;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .resume{
+    display: flex;
     align-self: center;
     justify-content: center;
     margin-right: 10%;
     margin-left: 10%;
     margin-bottom: 15%;
     font-size: 1.5em;
+    text-align: justify;
 }
 
 .competences{
@@ -86,4 +101,17 @@
 
 .title-text{
     margin-left: 3%;
+}
+
+.cardcompetences{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background-color: #000814;
+}
+
+.btn-skills{
+    width: 100%;
 }

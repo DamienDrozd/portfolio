@@ -1,4 +1,8 @@
 import React, { Component, useState } from "react";
+import image1 from "../media/image040.jfif";
+import image2 from "../media/image041.jfif";
+import image3 from "../media/image042.jfif";
+import image4 from "../media/image043.jfif";
 
 
 export default function Article6() {
@@ -9,7 +13,22 @@ export default function Article6() {
                 <div className="paragraphe">
                     <p>
                         Pour conclure ce stage, Samuel, mon référent de stage m’a emmené à une exposition ou la voiture était exposée. C’était une bonne conclusion à ce stage que de voir la voiture sur laquelle on avait travaillé durant plusieurs mois en vrai. 
-                        {/* images expo */}
+                        <div className="image">
+                            <img src={image1} alt="image1" width="50%"/>
+                            <p></p>
+                        </div>
+                        <div className="image">
+                            <img src={image2} alt="image2" width="50%"/>
+                            <p></p>
+                        </div>
+                        <div className="image">
+                            <img src={image3} alt="image3" width="50%"/>
+                            <p></p>
+                        </div>
+                        <div className="image">
+                            <img src={image4} alt="image4" width="50%"/>
+                            <p></p>
+                        </div>
                     </p>
                     <p>
                         Pour faire un bilan plus général, je suis vraiment heureux d’avoir pu participer à cette aventure avec toute l’équipe, l’ambiance de travail était très bonne.

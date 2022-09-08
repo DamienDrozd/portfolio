@@ -20,6 +20,20 @@ class Contact extends React.Component {
         <h1 className="title yellow">Me contacter</h1>
         <div class="card contact">
           <div class="card-body">
+            <div className="white">
+            Email : damien.drozd@icloud.com 
+            </div>
+            <div className="white">
+            Téléphone : 07 87 27 71 92
+            </div>
+            <div>
+              <a class="nav-item nav-link" href="https://www.linkedin.com/in/damiendrozd/">LinkedIn</a>        
+              <a class="nav-item nav-link" href="https://github.com/DamienDrozd">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="card contact">
+          <div class="card-body">
             <form id="contact-form">
               <div className="form-group">
                 <label htmlFor="name">Nom</label>

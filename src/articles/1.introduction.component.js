@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
-import image1 from "../media/Image1.jpg";
-import image2 from "../media/Image2.png";
+import image1 from "../media/image001.jpg";
+import image2 from "../media/image002.png";
 
 
 export default function Article1() {

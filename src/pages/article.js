@@ -43,12 +43,12 @@ function Article(){
       {articleTab[articleId]}
 
       <div className="btn-articles">
-        <button class="btn btn-warning" id="precedent" onClick={() => {
+        <button class="btn btn-warning btn-pages" id="precedent" onClick={() => {
           setArticleId(articleId-1);
           window.location.replace("/article?id="+(articleId));
         }}>Précédent</button>
 
-        <button class="btn btn-warning" id="suivant" onClick={() => {
+        <button class="btn btn-warning btn-pages" id="suivant" onClick={() => {
           let id = articleId+2;
           setArticleId(id);
           window.location.replace("/article?id="+(id));
