@@ -20,7 +20,7 @@ function Article(){
     let tab = [<Article1/>, <Article2/>, <Article3/>, <Article4/>, <Article5/>, <Article6/>];
     setArticleTab(tab);
     disableButton();
-  });
+  }, [disableButton]);
 
   function disableButton() {
     if(articleId <= 0 ){
