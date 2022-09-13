@@ -11,8 +11,10 @@ import React, { useState } from 'react';
 function About() {
   
   const [competencesId, setCompetencesId] = useState(0);
+  const d = new Date();
 
-  var tab = [
+
+  let tab = [
     <div class="card cardcompetences" >
       <div class="card-body white">
         <h4>- Utilisation d'APIs</h4>
@@ -89,9 +91,9 @@ function About() {
       </div>
       <hr class="solid"></hr>
       <div className="resume white">
-        Je suis actuellement en deuxième année de Bachelor Informatique, et je suis à la recherche d’un poste en alternance pour une durée de 3 ans et d’un stage d’une durée minimale de 6 semaines.
-        Passionné d’informatique et de nouvelles technologies, de nature curieuse, je passe beaucoup de temps à acquérir de nouvelles connaissances, et à me perfectionner dans divers domaines. J’aime également apprendre en autodidacte, bien que je reste tout à fait polyvalent pour le travail en équipe, et adaptable à toutes situations.
-        {competencesId}
+        Je m'appelle Damien et j'ai {d.getFullYear()-2001} ans. Je suis actuellement en troisième année d'informatique.<br/>
+        Je suis passionné d’informatique et de nouvelles technologies. De nature curieuse, je passe beaucoup de temps à acquérir de nouvelles connaissances, et à me perfectionner dans divers domaines. <br/>Le développement web, le développement blockchain, l'IT et les objets connectés sont les sujets qui me passionnent le plus. <br/> 
+        
       </div>
 
 
