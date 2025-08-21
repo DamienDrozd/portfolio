@@ -21,7 +21,7 @@ export default function LaWEboxPage() {
             href="/"
             className="inline-flex items-center text-[#FFC300] hover:text-[#FFD700] transition-colors"
           >
-            ← Retour à l'accueil
+            ← Retour à l&apos;accueil
           </Link>
         </div>
 
@@ -30,12 +30,12 @@ export default function LaWEboxPage() {
           <h2 className="text-[#FFC300] text-2xl font-bold mb-6">Description du poste</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              Chez LaWEbox, une entreprise edtech innovante, j'ai eu l'opportunité de travailler sur 
-              le développement d'APIs REST et d'interfaces back-office pour les équipes internes, 
+                          Chez LaWEbox, une entreprise edtech innovante, j&apos;ai eu l&apos;opportunité de travailler sur
+            le développement d&apos;APIs REST et d&apos;interfaces back-office pour les équipes internes, 
               tout en menant des projets data de bout en bout.
             </p>
             <p>
-              Cette expérience m'a permis de développer une expertise complète en développement web 
+              Cette expérience m&apos;a permis de développer une expertise complète en développement web 
               avec Python, combinant backend, frontend et data science dans un environnement 
               professionnel dynamique.
             </p>
@@ -50,13 +50,13 @@ export default function LaWEboxPage() {
               <div>
                 <h3 className="text-white font-semibold mb-2">Développement backend</h3>
                 <p className="text-gray-300 text-sm">
-                  Conception et développement d'APIs REST avec Django et Flask
+                  Conception et développement d&apos;APIs REST avec Django et Flask
                 </p>
               </div>
               <div>
                 <h3 className="text-white font-semibold mb-2">Interfaces back-office</h3>
                 <p className="text-gray-300 text-sm">
-                  Création d'interfaces d'administration personnalisées pour les équipes internes
+                  Création d&apos;interfaces d&apos;administration personnalisées pour les équipes internes
                 </p>
               </div>
               <div>
@@ -99,7 +99,7 @@ export default function LaWEboxPage() {
                 <li>• Python avancé</li>
                 <li>• Django (Django REST Framework)</li>
                 <li>• Flask (Blueprints)</li>
-                <li>• Conception d'API RESTful</li>
+                <li>• Conception d&apos;API RESTful</li>
                 <li>• Validation et sérialisation</li>
                 <li>• Pagination et rate-limiting</li>
                 <li>• Authentification (JWT/session)</li>
@@ -176,13 +176,13 @@ export default function LaWEboxPage() {
               <h3 className="text-white font-semibold mb-2">Traitement et nettoyage</h3>
               <p>
                 Développement de scripts Python pour le nettoyage, la transformation et 
-                la préparation des données pour l'analyse.
+                la préparation des données pour l&apos;analyse.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Analyse et modélisation</h3>
               <p>
-                Création de modèles d'analyse et de visualisations pour extraire des insights 
+                Création de modèles d&apos;analyse et de visualisations pour extraire des insights 
                 pertinents des données collectées.
               </p>
             </div>
@@ -203,21 +203,21 @@ export default function LaWEboxPage() {
             <div>
               <h3 className="text-white font-semibold mb-2">Performance des APIs</h3>
               <p>
-                L'optimisation des performances des APIs REST pour gérer de gros volumes 
+                L&apos;optimisation des performances des APIs REST pour gérer de gros volumes 
                 de données tout en maintenant des temps de réponse rapides.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Interface back-office complexe</h3>
               <p>
-                La conception d'interfaces d'administration intuitives et performantes 
+                La conception d&apos;interfaces d&apos;administration intuitives et performantes 
                 pour des équipes avec des besoins métier spécifiques.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Intégration data science</h3>
               <p>
-                L'intégration harmonieuse des projets data science dans l'écosystème 
+                L&apos;intégration harmonieuse des projets data science dans l&apos;écosystème 
                 web existant, en respectant les contraintes de performance et de sécurité.
               </p>
             </div>
@@ -236,19 +236,19 @@ export default function LaWEboxPage() {
           <h2 className="text-[#FFC300] text-2xl font-bold mb-6">Apprentissages et impact</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              Cette expérience chez LaWEbox m'a permis de développer une expertise complète 
+              Cette expérience chez LaWEbox m&apos;a permis de développer une expertise complète 
               en développement web avec Python, combinant backend, frontend et data science 
               dans un contexte professionnel.
             </p>
             <p>
-              La conception d'interfaces back-office personnalisées m'a appris l'importance 
-              de l'expérience utilisateur même pour des outils internes, et la nécessité 
-              d'adapter les solutions aux besoins métier spécifiques.
+                            La conception d&apos;interfaces back-office personnalisées m&apos;a appris l&apos;importance
+              de l&apos;expérience utilisateur même pour des outils internes, et la nécessité
+              d&apos;adapter les solutions aux besoins métier spécifiques.
             </p>
             <p>
-              Les projets data de bout en bout m'ont donné une vision complète du cycle 
-              de vie des données, de la collecte à l'analyse, en passant par le traitement 
-              et l'automatisation.
+                            Les projets data de bout en bout m&apos;ont donné une vision complète du cycle
+              de vie des données, de la collecte à l&apos;analyse, en passant par le traitement
+              et l&apos;automatisation.
             </p>
             <p>
               Cette alternance a considérablement renforcé mes compétences en Python et 

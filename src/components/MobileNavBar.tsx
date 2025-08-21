@@ -2,10 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
-import { navigationRoutes } from "./navigationRoutes";
+import { navigationRoutes, NavigationRoute } from "./navigationRoutes";
 
 // Composant pour un lien de navigation mobile
-const MobileNavLink = ({ route, onClose }: { route: any; onClose: () => void }) => {
+const MobileNavLink = ({ route, onClose }: { route: NavigationRoute; onClose: () => void }) => {
     const baseClasses = "block text-[#FFC300] hover:text-[#FFD700] px-3 py-2 transition-colors";
     
     const handleClick = () => {

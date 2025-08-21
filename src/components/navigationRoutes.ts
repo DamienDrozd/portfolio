@@ -1,5 +1,16 @@
+// Types pour les routes de navigation
+export interface NavigationRoute {
+    href: string;
+    label: string;
+    target?: string;
+    rel?: string;
+}
+
 // Objet définissant toutes les routes de navigation
-export const navigationRoutes = {
+export const navigationRoutes: {
+    internal: NavigationRoute[];
+    external: NavigationRoute[];
+} = {
     internal: [
         { href: "/", label: "Accueil" },
         { href: "/experiences", label: "Expériences" },

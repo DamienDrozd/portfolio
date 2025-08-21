@@ -20,7 +20,7 @@ export default function PEELPage() {
             href="/"
             className="inline-flex items-center text-[#FFC300] hover:text-[#FFD700] transition-colors"
           >
-            ← Retour à l'accueil
+            ← Retour à l&apos;accueil
           </Link>
         </div>
 
@@ -30,12 +30,12 @@ export default function PEELPage() {
           <div className="text-gray-300 space-y-4">
             <p>
               PEEL est une application de rencontre mobile inspirée de Tinder (swipe, matching), 
-              mais centrée sur la compatibilité réelle plutôt que sur l'apparence. L'app met en avant 
-              activités communes, centres d'intérêt et traits de personnalité (GIFs, musiques, films, etc.) 
+                          mais centrée sur la compatibilité réelle plutôt que sur l&apos;apparence. L&apos;app met en avant
+            activités communes, centres d&apos;intérêt et traits de personnalité (GIFs, musiques, films, etc.) 
               pour encourager des échanges authentiques et des relations durables.
             </p>
             <p>
-              J'ai contribué à concevoir une expérience fluide (onboarding, création de profil riche, swipe, 
+              J&apos;ai contribué à concevoir une expérience fluide (onboarding, création de profil riche, swipe, 
               match, messagerie) et à poser des bases produit orientées sécurité, confiance et respect de la vie privée.
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function PEELPage() {
               <div>
                 <h3 className="text-white font-semibold mb-2">Profils enrichis</h3>
                 <p className="text-gray-300 text-sm">
-                  Création de profils détaillés avec centres d'intérêt et activités communes
+                  Création de profils détaillés avec centres d&apos;intérêt et activités communes
                 </p>
               </div>
               <div>
@@ -133,7 +133,7 @@ export default function PEELPage() {
               <h3 className="text-white font-semibold text-lg mb-3">Logique de matching</h3>
               <ul className="text-gray-300 space-y-2">
                 <li>• Algorithme de recommandation basé sur la compatibilité</li>
-                <li>• Analyse des centres d'intérêt et activités</li>
+                <li>• Analyse des centres d&apos;intérêt et activités</li>
                 <li>• Système de préférences utilisateur</li>
                 <li>• Optimisation des suggestions</li>
               </ul>
@@ -143,7 +143,7 @@ export default function PEELPage() {
               <ul className="text-gray-300 space-y-2">
                 <li>• Comptes sécurisés avec validation</li>
                 <li>• Gestion des sessions et tokens</li>
-                <li>• Contrôle d'accès par ressource</li>
+                <li>• Contrôle d&apos;accès par ressource</li>
                 <li>• Système de signalements</li>
               </ul>
             </div>
@@ -157,21 +157,21 @@ export default function PEELPage() {
             <div>
               <h3 className="text-white font-semibold mb-2">Algorithme de matching</h3>
               <p>
-                La conception d'un algorithme de recommandation efficace basé sur la compatibilité 
-                plutôt que sur l'apparence a nécessité une approche différente des applications de rencontre traditionnelles.
+                              La conception d&apos;un algorithme de recommandation efficace basé sur la compatibilité
+              plutôt que sur l&apos;apparence a nécessité une approche différente des applications de rencontre traditionnelles.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Performance mobile</h3>
               <p>
-                L'optimisation des performances sur mobile, notamment pour la gestion des médias 
-                et les interactions de swipe, a été cruciale pour l'expérience utilisateur.
+                              L&apos;optimisation des performances sur mobile, notamment pour la gestion des médias
+              et les interactions de swipe, a été cruciale pour l&apos;expérience utilisateur.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Sécurité et modération</h3>
               <p>
-                La mise en place d'un système de modération efficace et de signalements 
+                La mise en place d&apos;un système de modération efficace et de signalements 
                 pour assurer la sécurité des utilisateurs a été un défi majeur.
               </p>
             </div>
@@ -190,22 +190,22 @@ export default function PEELPage() {
           <h2 className="text-[#FFC300] text-2xl font-bold mb-6">Apprentissages</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              Ce projet m'a permis de développer une expertise complète en développement mobile 
+              Ce projet m&apos;a permis de développer une expertise complète en développement mobile 
               avec React Native, de la conception initiale à la distribution sur les stores.
             </p>
             <p>
-              La conception d'un algorithme de matching et la gestion de la sécurité dans une 
-              application de rencontre m'ont appris l'importance de l'éthique et de la responsabilité 
-              dans le développement d'applications sociales.
+                            La conception d&apos;un algorithme de matching et la gestion de la sécurité dans une
+              application de rencontre m&apos;ont appris l&apos;importance de l&apos;éthique et de la responsabilité
+              dans le développement d&apos;applications sociales.
             </p>
             <p>
-              L'expérience de distribution mobile m'a donné une compréhension approfondie des 
+              L&apos;expérience de distribution mobile m&apos;a donné une compréhension approfondie des 
               processus de validation et des contraintes des plateformes mobiles.
             </p>
             <p>
               Ce projet démontre ma capacité à travailler sur des applications complexes avec 
               des enjeux de sécurité et de performance critiques, compétences essentielles 
-              pour le développement d'applications mobiles modernes.
+              pour le développement d&apos;applications mobiles modernes.
             </p>
           </div>
         </div>

@@ -21,7 +21,7 @@ export default function ReconomiaPage() {
             href="/"
             className="inline-flex items-center text-[#FFC300] hover:text-[#FFD700] transition-colors"
           >
-            ← Retour à l'accueil
+            ← Retour à l&apos;accueil
           </Link>
         </div>
 
@@ -30,14 +30,14 @@ export default function ReconomiaPage() {
           <h2 className="text-[#FFC300] text-2xl font-bold mb-6">Description du poste</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              Chez Reconomia, j'ai eu l'opportunité de travailler sur le développement d'une application mobile 
-              React Native complète, de la conception d'APIs avec FastAPI jusqu'au déploiement sur Azure. 
-              Cette alternance m'a permis de mettre en pratique mes compétences techniques tout en développant 
+                          Chez Reconomia, j&apos;ai eu l&apos;opportunité de travailler sur le développement d&apos;une application mobile
+            React Native complète, de la conception d&apos;APIs avec FastAPI jusqu&apos;au déploiement sur Azure. 
+              Cette alternance m&apos;a permis de mettre en pratique mes compétences techniques tout en développant 
               une approche professionnelle du développement.
             </p>
             <p>
-              J'ai participé activement à la veille technologique pour intégrer les innovations pertinentes 
-              au produit et au pipeline de développement, contribuant ainsi à l'amélioration continue 
+                          J&apos;ai participé activement à la veille technologique pour intégrer les innovations pertinentes
+            au produit et au pipeline de développement, contribuant ainsi à l&apos;amélioration continue 
               de nos processus et de nos solutions techniques.
             </p>
           </div>
@@ -51,19 +51,19 @@ export default function ReconomiaPage() {
               <div>
                 <h3 className="text-white font-semibold mb-2">Développement mobile</h3>
                 <p className="text-gray-300 text-sm">
-                  Conception et développement d'application React Native pour iOS et Android
+                  Conception et développement d&apos;application React Native pour iOS et Android
                 </p>
               </div>
               <div>
                 <h3 className="text-white font-semibold mb-2">APIs backend</h3>
                 <p className="text-gray-300 text-sm">
-                  Création d'APIs robustes avec FastAPI et déploiement sur Azure
+                  Création d&apos;APIs robustes avec FastAPI et déploiement sur Azure
                 </p>
               </div>
               <div>
                 <h3 className="text-white font-semibold mb-2">Veille technologique</h3>
                 <p className="text-gray-300 text-sm">
-                  Recherche et intégration d'innovations dans le pipeline de développement
+                  Recherche et intégration d&apos;innovations dans le pipeline de développement
                 </p>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function ReconomiaPage() {
               <div>
                 <h3 className="text-white font-semibold mb-2">Optimisation</h3>
                 <p className="text-gray-300 text-sm">
-                  Amélioration des performances et de l'expérience utilisateur
+                  Amélioration des performances et de l&apos;expérience utilisateur
                 </p>
               </div>
               <div>
@@ -99,7 +99,7 @@ export default function ReconomiaPage() {
               <ul className="text-gray-300 space-y-2">
                 <li>• React Native (iOS/Android)</li>
                 <li>• React, TypeScript</li>
-                <li>• Gestion d'état avancée</li>
+                <li>• Gestion d&apos;état avancée</li>
                 <li>• Navigation complexe</li>
                 <li>• Formulaires et validation</li>
                 <li>• Accessibilité</li>
@@ -148,7 +148,7 @@ export default function ReconomiaPage() {
             <div>
               <h3 className="text-white font-semibold text-lg mb-3">Intégrations/ERP</h3>
               <ul className="text-gray-300 space-y-2">
-                <li>• Odoo - Conception et exposition d'endpoints</li>
+                <li>• Odoo - Conception et exposition d&apos;endpoints</li>
                 <li>• Synchronisation de données</li>
                 <li>• Mapping des modèles (res.partner, sale.order)</li>
                 <li>• Gestion des produits et stocks</li>
@@ -200,14 +200,14 @@ export default function ReconomiaPage() {
               <h3 className="text-white font-semibold mb-2">Code review</h3>
               <p>
                 Participation active aux revues de code pour maintenir la qualité du code et 
-                partager les bonnes pratiques avec l'équipe.
+                partager les bonnes pratiques avec l&apos;équipe.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Documentation</h3>
               <p>
                 Rédaction de documentation technique détaillée et de guides utilisateur pour 
-                faciliter la maintenance et l'évolution du projet.
+                faciliter la maintenance et l&apos;évolution du projet.
               </p>
             </div>
             <div>
@@ -225,17 +225,17 @@ export default function ReconomiaPage() {
           <h2 className="text-[#FFC300] text-2xl font-bold mb-6">Apprentissages et impact</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              Cette alternance chez Reconomia m'a permis de développer une expertise approfondie 
+              Cette alternance chez Reconomia m&apos;a permis de développer une expertise approfondie 
               en développement fullstack, combinant développement mobile avec React Native et 
               backend avec FastAPI.
             </p>
             <p>
-              L'intégration de systèmes complexes comme Keycloak et Odoo m'a appris l'importance 
-              de la conception d'APIs robustes et de la gestion des intégrations tierces.
+                            L&apos;intégration de systèmes complexes comme Keycloak et Odoo m&apos;a appris l&apos;importance
+              de la conception d&apos;APIs robustes et de la gestion des intégrations tierces.
             </p>
             <p>
-              La collaboration avec les équipes produit et design m'a donné une vision complète 
-              du développement d'applications professionnelles, de la conception à la livraison.
+                            La collaboration avec les équipes produit et design m&apos;a donné une vision complète
+              du développement d&apos;applications professionnelles, de la conception à la livraison.
             </p>
             <p>
               Cette expérience a considérablement renforcé mes compétences techniques et ma capacité 

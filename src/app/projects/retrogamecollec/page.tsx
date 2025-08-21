@@ -20,7 +20,7 @@ export default function RetroGameCollecPage() {
             href="/"
             className="inline-flex items-center text-[#FFC300] hover:text-[#FFD700] transition-colors"
           >
-            ← Retour à l'accueil
+            ← Retour à l&apos;accueil
           </Link>
         </div>
 
@@ -30,13 +30,13 @@ export default function RetroGameCollecPage() {
           <div className="text-gray-300 space-y-4">
             <p>
               RetroGameCollec est une application personnelle conçue pour aider les collectionneurs de jeux vidéo rétro 
-              à organiser, rechercher et partager leur ludothèque. Née d'un besoin concret (éviter les achats en double), 
-              elle centralise la gestion des collections, la découverte de titres emblématiques et l'interaction communautaire.
+                          à organiser, rechercher et partager leur ludothèque. Née d&apos;un besoin concret (éviter les achats en double),
+            elle centralise la gestion des collections, la découverte de titres emblématiques et l&apos;interaction communautaire.
             </p>
             <p>
-              L'application propose un cœur de fonctionnalités essentielles gratuites et une vision d'abonnement léger 
-              pour des options avancées. J'ai porté le produit de l'idée à une version opérationnelle, en travaillant 
-              l'UX pour la consultation rapide des jeux, l'import de jaquettes, la classification par console/année/rareté 
+                          L&apos;application propose un cœur de fonctionnalités essentielles gratuites et une vision d&apos;abonnement léger
+            pour des options avancées. J&apos;ai porté le produit de l&apos;idée à une version opérationnelle, en travaillant
+            l&apos;UX pour la consultation rapide des jeux, l&apos;import de jaquettes, la classification par console/année/rareté 
               et le partage public de collections.
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function RetroGameCollecPage() {
               <div>
                 <h3 className="text-white font-semibold mb-2">Import de jaquettes</h3>
                 <p className="text-gray-300 text-sm">
-                  Système d'import automatique des visuels depuis l'API IGDB
+                  Système d&apos;import automatique des visuels depuis l&apos;API IGDB
                 </p>
               </div>
             </div>
@@ -158,21 +158,21 @@ export default function RetroGameCollecPage() {
             <div>
               <h3 className="text-white font-semibold mb-2">Intégration IGDB API</h3>
               <p>
-                L'intégration de l'API IGDB a nécessité une authentification client-credentials et 
+                L&apos;intégration de l&apos;API IGDB a nécessité une authentification client-credentials et 
                 la normalisation des données pour assurer la cohérence avec notre modèle de données.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Gestion des collections</h3>
               <p>
-                La conception d'un système flexible pour gérer différents types de collections 
+                La conception d&apos;un système flexible pour gérer différents types de collections 
                 tout en maintenant les performances a été un défi majeur.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">SEO et performance</h3>
               <p>
-                L'optimisation pour le référencement naturel tout en maintenant une expérience 
+                L&apos;optimisation pour le référencement naturel tout en maintenant une expérience 
                 utilisateur fluide a nécessité un équilibre entre SSG/ISR et dynamisme.
               </p>
             </div>
@@ -184,12 +184,12 @@ export default function RetroGameCollecPage() {
           <h2 className="text-[#FFC300] text-2xl font-bold mb-6">Apprentissages</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              Ce projet m'a permis de développer une application complète de A à Z, de la conception 
-              initiale au déploiement. L'utilisation de Next.js 15 avec l'App Router a été particulièrement 
+                          Ce projet m&apos;a permis de développer une application complète de A à Z, de la conception
+            initiale au déploiement. L&apos;utilisation de Next.js 15 avec l&apos;App Router a été particulièrement 
               enrichissante pour comprendre les nouvelles approches de développement web.
             </p>
             <p>
-              L'intégration d'APIs tierces et la gestion de données complexes m'ont appris l'importance 
+              L&apos;intégration d&apos;APIs tierces et la gestion de données complexes m&apos;ont appris l&apos;importance 
               de la normalisation et de la validation des données. La conception UX pour un public 
               spécialisé (collectionneurs) a également été un défi intéressant.
             </p>

@@ -21,7 +21,7 @@ export default function FreelancePage() {
             href="/"
             className="inline-flex items-center text-[#FFC300] hover:text-[#FFD700] transition-colors"
           >
-            ← Retour à l'accueil
+            ← Retour à l&apos;accueil
           </Link>
         </div>
 
@@ -30,12 +30,12 @@ export default function FreelancePage() {
           <h2 className="text-[#FFC300] text-2xl font-bold mb-6">Description du projet</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              Mission freelance pour l'association "Agir pour les séniors sourds dépendants de France" 
+              Mission freelance pour l&apos;association &quot;Agir pour les séniors sourds dépendants de France&quot; 
               consistant à créer un site web vitrine accessible aux personnes sourdes et mal voyantes. 
-              Le site devait permettre à l'équipe d'ajouter et modifier des articles facilement.
+              Le site devait permettre à l&apos;équipe d&apos;ajouter et modifier des articles facilement.
             </p>
             <p>
-              Cette mission m'a permis de mettre en pratique mes compétences en développement web 
+              Cette mission m&apos;a permis de mettre en pratique mes compétences en développement web 
               tout en contribuant à une cause sociale importante, en créant une solution technologique 
               véritablement inclusive.
             </p>
@@ -50,7 +50,7 @@ export default function FreelancePage() {
               <div>
                 <h3 className="text-white font-semibold mb-2">Site web vitrine</h3>
                 <p className="text-gray-300 text-sm">
-                  Création d'un site web moderne et professionnel pour présenter l'association
+                  Création d&apos;un site web moderne et professionnel pour présenter l&apos;association
                 </p>
               </div>
               <div>
@@ -62,7 +62,7 @@ export default function FreelancePage() {
               <div>
                 <h3 className="text-white font-semibold mb-2">Gestion de contenu</h3>
                 <p className="text-gray-300 text-sm">
-                  Système permettant à l'équipe d'ajouter et modifier des articles
+                  Système permettant à l&apos;équipe d&apos;ajouter et modifier des articles
                 </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function FreelancePage() {
               <div>
                 <h3 className="text-white font-semibold mb-2">Interface intuitive</h3>
                 <p className="text-gray-300 text-sm">
-                  Interface d'administration simple et accessible pour l'équipe
+                  Interface d&apos;administration simple et accessible pour l&apos;équipe
                 </p>
               </div>
               <div>
@@ -136,10 +136,10 @@ export default function FreelancePage() {
             <div>
               <h3 className="text-white font-semibold text-lg mb-3">Site vitrine</h3>
               <ul className="text-gray-300 space-y-2">
-                <li>• Pages d'accueil et de présentation</li>
+                <li>• Pages d&apos;accueil et de présentation</li>
                 <li>• Section actualités et articles</li>
                 <li>• Formulaire de contact</li>
-                <li>• Informations sur l'association</li>
+                <li>• Informations sur l&apos;association</li>
                 <li>• Design responsive et moderne</li>
                 <li>• Optimisation SEO</li>
               </ul>
@@ -147,8 +147,8 @@ export default function FreelancePage() {
             <div>
               <h3 className="text-white font-semibold text-lg mb-3">CMS léger</h3>
               <ul className="text-gray-300 space-y-2">
-                <li>• Interface d'administration</li>
-                <li>• Création et édition d'articles</li>
+                <li>• Interface d&apos;administration</li>
+                <li>• Création et édition d&apos;articles</li>
                 <li>• Gestion des médias</li>
                 <li>• Système de rôles</li>
                 <li>• Prévisualisation des articles</li>
@@ -165,14 +165,14 @@ export default function FreelancePage() {
             <div>
               <h3 className="text-white font-semibold mb-2">HTML sémantique et ARIA</h3>
               <p>
-                Utilisation d'une structure HTML sémantique avec des attributs ARIA appropriés 
-                pour assurer une navigation fluide avec les lecteurs d'écran.
+                Utilisation d&apos;une structure HTML sémantique avec des attributs ARIA appropriés 
+                pour assurer une navigation fluide avec les lecteurs d&apos;écran.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Navigation clavier</h3>
               <p>
-                Implémentation d'une navigation complète au clavier avec des indicateurs 
+                Implémentation d&apos;une navigation complète au clavier avec des indicateurs 
                 de focus visibles et une logique de tabulation cohérente.
               </p>
             </div>
@@ -229,28 +229,28 @@ export default function FreelancePage() {
             <div>
               <h3 className="text-white font-semibold mb-2">Accessibilité universelle</h3>
               <p>
-                La conception d'un site véritablement accessible pour les personnes sourdes 
+                La conception d&apos;un site véritablement accessible pour les personnes sourdes 
                 et mal voyantes a nécessité une approche inclusive dès la conception.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">CMS simple mais puissant</h3>
               <p>
-                La création d'un CMS léger mais fonctionnel pour une équipe non-technique 
+                La création d&apos;un CMS léger mais fonctionnel pour une équipe non-technique 
                 a demandé un équilibre entre simplicité et fonctionnalité.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Performance et accessibilité</h3>
               <p>
-                L'optimisation des performances tout en maintenant un niveau élevé 
-                d'accessibilité a été un défi technique majeur.
+                L&apos;optimisation des performances tout en maintenant un niveau élevé 
+                d&apos;accessibilité a été un défi technique majeur.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-2">Contenu multimédia</h3>
               <p>
-                L'intégration de différents types de contenu (texte, vidéos, LSF) 
+                L&apos;intégration de différents types de contenu (texte, vidéos, LSF) 
                 de manière cohérente et accessible a nécessité une réflexion approfondie.
               </p>
             </div>
@@ -262,23 +262,23 @@ export default function FreelancePage() {
           <h2 className="text-[#FFC300] text-2xl font-bold mb-6">Impact et apprentissages</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              Cette mission freelance m'a permis de contribuer à une cause sociale importante 
+              Cette mission freelance m&apos;a permis de contribuer à une cause sociale importante 
               en créant une solution technologique véritablement inclusive pour une association 
               dédiée aux personnes sourdes et mal voyantes.
             </p>
             <p>
-              L'approche d'accessibilité universelle m'a appris l'importance de concevoir 
+              L&apos;approche d&apos;accessibilité universelle m&apos;a appris l&apos;importance de concevoir 
               des solutions inclusives dès le départ, et non comme une fonctionnalité ajoutée 
               après coup.
             </p>
             <p>
-              La création d'un CMS léger pour une équipe non-technique m'a donné une vision 
-              claire de l'importance de l'expérience utilisateur dans les outils d'administration, 
+              La création d&apos;un CMS léger pour une équipe non-technique m&apos;a donné une vision 
+              claire de l&apos;importance de l&apos;expérience utilisateur dans les outils d&apos;administration, 
               même pour des fonctionnalités simples.
             </p>
             <p>
               Cette expérience freelance a renforcé mes compétences en développement web 
-              et m'a sensibilisé aux enjeux d'accessibilité numérique, compétences précieuses 
+              et m&apos;a sensibilisé aux enjeux d&apos;accessibilité numérique, compétences précieuses 
               pour ma carrière de développeur.
             </p>
           </div>

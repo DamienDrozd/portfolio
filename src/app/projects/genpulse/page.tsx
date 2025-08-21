@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function GenPulsePage() {
@@ -21,7 +20,7 @@ export default function GenPulsePage() {
             href="/"
             className="inline-flex items-center text-[#FFC300] hover:text-[#FFD700] transition-colors"
           >
-            ← Retour à l'accueil
+            ← Retour à l&apos;accueil
           </Link>
         </div>
 
@@ -30,13 +29,13 @@ export default function GenPulsePage() {
           <h2 className="text-[#FFC300] text-2xl font-bold mb-6">À propos du projet</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              GenPulse est une plateforme web innovante que j'ai cofondée et développée de A à Z. 
-              En tant que cofondateur, je pilote l'ensemble du développement web de notre plateforme, 
+              GenPulse est une plateforme web innovante que j&apos;ai cofondée et développée de A à Z. 
+              En tant que cofondateur, je pilote l&apos;ensemble du développement web de notre plateforme, 
               de la conception initiale à la maintenance continue.
             </p>
             <p>
-              Ce projet représente l'aboutissement de plusieurs années d'expérience en développement web 
-              et d'une vision entrepreneuriale. L'objectif est de créer une solution qui répond à un 
+              Ce projet représente l&apos;aboutissement de plusieurs années d&apos;expérience en développement web 
+              et d&apos;une vision entrepreneuriale. L&apos;objectif est de créer une solution qui répond à un 
               besoin réel du marché tout en utilisant les technologies les plus modernes.
             </p>
           </div>
@@ -48,16 +47,16 @@ export default function GenPulsePage() {
           <div className="text-gray-300 space-y-4">
             <h3 className="text-white font-semibold text-lg">Cofondateur & Développeur Web</h3>
             <p>
-              En tant que cofondateur, je suis responsable de l'ensemble de la stratégie technique 
+              En tant que cofondateur, je suis responsable de l&apos;ensemble de la stratégie technique 
               et du développement de la plateforme. Mon rôle va bien au-delà du simple développement :
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Conception des choix techniques et de l'architecture logicielle</li>
+              <li>Conception des choix techniques et de l&apos;architecture logicielle</li>
               <li>Développement et maintenance du site web avec Next.js</li>
               <li>Conception et mise en place de back-ends performants avec Fastify</li>
-              <li>Collaboration avec l'équipe produit et design</li>
+              <li>Collaboration avec l&apos;équipe produit et design</li>
               <li>Transformation des besoins utilisateurs en solutions techniques</li>
-              <li>Gestion de l'infrastructure et du déploiement</li>
+              <li>Gestion de l&apos;infrastructure et du déploiement</li>
             </ul>
           </div>
         </div>
@@ -97,7 +96,7 @@ export default function GenPulsePage() {
               <div>
                 <h3 className="text-white font-semibold mb-2">Plateforme complète</h3>
                 <p className="text-gray-300 text-sm">
-                  Solution end-to-end couvrant tous les aspects de l'expérience utilisateur
+                  Solution end-to-end couvrant tous les aspects de l&apos;expérience utilisateur
                 </p>
               </div>
               <div>
@@ -117,7 +116,7 @@ export default function GenPulsePage() {
               <div>
                 <h3 className="text-white font-semibold mb-2">Performance</h3>
                 <p className="text-gray-300 text-sm">
-                  Optimisation des temps de chargement et de l'expérience utilisateur
+                  Optimisation des temps de chargement et de l&apos;expérience utilisateur
                 </p>
               </div>
             </div>
@@ -129,8 +128,8 @@ export default function GenPulsePage() {
           <h2 className="text-[#FFC300] text-2xl font-bold mb-6">Défis et apprentissages</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              Ce projet m'a permis de développer des compétences entrepreneuriales en plus des compétences techniques. 
-              La gestion d'un projet de cette envergure nécessite une vision à long terme et une capacité d'adaptation.
+              Ce projet m&apos;a permis de développer des compétences entrepreneuriales en plus des compétences techniques. 
+              La gestion d&apos;un projet de cette envergure nécessite une vision à long terme et une capacité d&apos;adaptation.
             </p>
             <p>
               Les principaux défis ont été de concilier les contraintes techniques avec les besoins business, 
@@ -144,12 +143,12 @@ export default function GenPulsePage() {
           <h2 className="text-[#FFC300] text-2xl font-bold mb-6">Statut actuel</h2>
           <div className="text-gray-300">
             <p className="mb-4">
-              Le projet est actuellement en phase de développement actif. Nous travaillons sur l'amélioration 
-              continue de la plateforme et l'ajout de nouvelles fonctionnalités basées sur les retours utilisateurs.
+              Le projet est actuellement en phase de développement actif. Nous travaillons sur l&apos;amélioration 
+              continue de la plateforme et l&apos;ajout de nouvelles fonctionnalités basées sur les retours utilisateurs.
             </p>
             <p>
               Cette expérience de cofondateur me permet de comprendre les enjeux business et techniques 
-              d'un projet entrepreneurial, compétences précieuses pour ma carrière de développeur.
+              d&apos;un projet entrepreneurial, compétences précieuses pour ma carrière de développeur.
             </p>
           </div>
         </div>

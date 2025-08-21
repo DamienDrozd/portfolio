@@ -2,10 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
-import { navigationRoutes } from "./navigationRoutes";
+import { navigationRoutes, NavigationRoute } from "./navigationRoutes";
 
 // Composant pour un lien de navigation desktop
-const DesktopNavLink = ({ route }: { route: any }) => {
+const DesktopNavLink = ({ route }: { route: NavigationRoute }) => {
     const baseClasses = "text-[#FFC300] hover:text-[#FFD700] transition-colors";
 
     if (route.target) {

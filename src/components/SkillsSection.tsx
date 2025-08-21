@@ -78,16 +78,6 @@ export default function SkillsSection() {
     }
   ];
 
-  function disableButton(id: number) {
-    const buttons = ["bouton0", "bouton1", "bouton2"];
-    buttons.forEach(btnId => {
-      const btn = document.getElementById(btnId);
-      if (btn) btn.setAttribute('disabled', 'false');
-    });
-    const targetBtn = document.getElementById("bouton" + id);
-    if (targetBtn) targetBtn.setAttribute('disabled', 'true');
-  }
-
   function scrollToSection(index: number) {
     const section = document.getElementById(`section${index}`);
     if (section) section.scrollIntoView({ behavior: 'smooth' });

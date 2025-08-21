@@ -37,7 +37,7 @@ export default function Contact() {
         setSubmitStatus('error');
         setErrorMessage(data.error || 'Une erreur est survenue');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
       setErrorMessage('Erreur de connexion. Veuillez réessayer.');
     } finally {
