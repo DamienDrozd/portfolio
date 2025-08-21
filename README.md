@@ -1,70 +1,210 @@
-# Getting Started with Create React App
+# Portfolio - Damien Drozd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio personnel de Damien Drozd, développeur web 3.0, migré de ReactJS vers NextJS avec Tailwind CSS.
 
-## Available Scripts
+## 🚀 Technologies utilisées
 
-In the project directory, you can run:
+- **Next.js 15** - Framework React avec App Router
+- **TypeScript** - Typage statique
+- **Tailwind CSS** - Framework CSS utilitaire (remplace Bootstrap)
+- **Firebase** - Backend et base de données
+- **Nodemailer** - Envoi d'emails (optionnel)
 
-### `npm start`
+## 📁 Structure du projet
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+portfolio/
+├── src/
+│   ├── app/                    # App Router Next.js
+│   │   ├── page.tsx           # Page d'accueil (About)
+│   │   ├── cv/page.tsx        # Page CV détaillée
+│   │   ├── blog/page.tsx      # Page blog
+│   │   ├── contact/page.tsx   # Page contact
+│   │   ├── context/page.tsx   # Page contexte entreprise
+│   │   ├── article/page.tsx   # Page articles
+│   │   ├── layout.tsx         # Layout principal
+│   │   ├── globals.css        # Styles globaux Tailwind
+│   │   └── api/               # API Routes
+│   │       └── contact/       # API d'envoi d'emails
+│   │           └── route.ts   # Endpoint POST /api/contact
+│   ├── components/
+│   │   └── NavBar.tsx         # Composant navigation
+│   └── articles/              # Composants d'articles
+│       ├── 1.introduction.component.tsx
+│       ├── 2.article1.component.tsx
+│       ├── 3.article2.component.tsx
+│       ├── 4.article3.component.tsx
+│       ├── 5.article4.component.tsx
+│       └── 6.conclusion.component.tsx
+├── public/
+│   └── media/                 # Images et médias
+├── EMAIL_SETUP.md             # Guide de configuration email
+├── email-config.example.txt   # Exemple de configuration
+└── package.json
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Installation et démarrage
 
-### `npm test`
+1. **Installer les dépendances :**
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Configurer l'envoi d'emails (optionnel) :**
+   ```bash
+   # Voir EMAIL_SETUP.md pour les instructions détaillées
+   cp email-config.example.txt .env.local
+   # Éditez .env.local avec vos informations
+   ```
 
-### `npm run build`
+3. **Démarrer le serveur de développement :**
+   ```bash
+   npm run dev
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Ouvrir dans le navigateur :**
+   ```
+   http://localhost:3000
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📝 Scripts disponibles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `npm run dev` - Démarre le serveur de développement
+- `npm run build` - Construit l'application pour la production
+- `npm run start` - Démarre le serveur de production
+- `npm run lint` - Lance ESLint
 
-### `npm run eject`
+## 🎨 Design System
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Couleurs
+- **Fond principal** : `#000814` (bleu très foncé)
+- **Accent** : `#FFC300` (jaune doré)
+- **Bleu secondaire** : `#003566`
+- **Texte** : Blanc (`#FFFFFF`)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Typographie
+- **Police principale** : Inter (Google Fonts)
+- **Titres** : Tailwind `text-4xl`, `text-3xl`, `text-2xl`
+- **Corps de texte** : Tailwind `text-lg`, `text-xl`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Composants
+- **Boutons** : Bordures avec hover effects
+- **Cartes** : Bordures arrondies avec ombres
+- **Navigation** : Responsive avec menu hamburger mobile
+- **Formulaires** : Styles cohérents avec focus states
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📧 Fonctionnalité d'envoi d'emails
 
-## Learn More
+Le formulaire de contact inclut une fonctionnalité complète d'envoi d'emails :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### ✅ Fonctionnalités
+- **Validation côté client et serveur**
+- **Interface utilisateur réactive** avec états de chargement
+- **Messages de confirmation** et d'erreur
+- **Protection anti-spam** avec validation d'email
+- **Template HTML personnalisé** pour les emails
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 🔧 Configuration
+Plusieurs options disponibles (voir `EMAIL_SETUP.md`) :
+- **Resend** (recommandé) - Service moderne et gratuit
+- **Nodemailer + Gmail** - Configuration traditionnelle
+- **EmailJS** - Envoi côté frontend
+- **SendGrid/Mailgun** - Services tiers populaires
 
-### Code Splitting
+### 🚀 API Endpoint
+```
+POST /api/contact
+Content-Type: application/json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+{
+  "name": "Nom du contact",
+  "email": "email@example.com",
+  "message": "Message du contact"
+}
+```
 
-### Analyzing the Bundle Size
+## 🔄 Migration depuis ReactJS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ce projet a été migré depuis une application ReactJS classique vers Next.js avec les améliorations suivantes :
 
-### Making a Progressive Web App
+### ✅ Améliorations apportées
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Performance optimisée** - Next.js optimise automatiquement les images et le code
+2. **SEO amélioré** - Rendu côté serveur et métadonnées optimisées
+3. **TypeScript** - Typage statique pour une meilleure maintenabilité
+4. **App Router** - Nouvelle architecture de routage Next.js
+5. **Tailwind CSS** - Remplacement complet de Bootstrap par Tailwind
+6. **Design moderne** - Interface responsive et accessible
+7. **Optimisation des images** - Utilisation du composant `Image` de Next.js
+8. **Code splitting automatique** - Chargement optimisé des pages
+9. **API Routes** - Backend intégré pour l'envoi d'emails
+10. **CV interactif** - Page dédiée avec toutes les informations professionnelles
 
-### Advanced Configuration
+### 🔧 Modifications principales
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Migration CSS** : Remplacement complet de Bootstrap par Tailwind CSS
+- **Composants modernisés** : Conversion des composants de classe en hooks React
+- **Navigation responsive** : Menu hamburger pour mobile avec Tailwind
+- **Système de routage** : Remplacement de `react-router-dom` par le système Next.js
+- **Images optimisées** : Migration des imports d'images vers le dossier `public/`
+- **TypeScript** : Conversion des fichiers `.js` en `.tsx`
+- **Styles unifiés** : Utilisation exclusive de Tailwind CSS pour tous les styles
+- **Backend intégré** : API Routes pour l'envoi d'emails
+- **CV mis à jour** : Informations professionnelles complètes et détaillées
 
-### Deployment
+## 📱 Pages disponibles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **/** - Page d'accueil avec présentation et compétences
+- **/cv** - CV détaillé avec expérience professionnelle complète
+- **/blog** - Liste des articles de blog
+- **/context** - Contexte de l'entreprise
+- **/article?id=X** - Articles individuels (1-6)
+- **/contact** - Formulaire de contact avec envoi d'emails
 
-### `npm run build` fails to minify
+## 🎨 Styles Tailwind CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Le projet utilise exclusivement Tailwind CSS pour tous les styles :
+
+### Classes principales utilisées
+- **Layout** : `flex`, `grid`, `container`, `max-w-*`
+- **Espacement** : `p-*`, `m-*`, `space-*`
+- **Couleurs** : `bg-[#000814]`, `text-[#FFC300]`, `border-[#FFC300]`
+- **Typographie** : `text-*`, `font-*`, `leading-*`
+- **Effets** : `hover:`, `focus:`, `transition-*`, `shadow-*`
+- **Responsive** : `sm:`, `md:`, `lg:`, `xl:`
+
+### Avantages de Tailwind CSS
+- **Performance** : CSS purgé automatiquement
+- **Cohérence** : Design system unifié
+- **Maintenabilité** : Pas de CSS personnalisé à maintenir
+- **Responsive** : Classes responsive intégrées
+- **Accessibilité** : Focus states et contrastes optimisés
+
+## 📦 Déploiement
+
+Le projet est prêt pour le déploiement sur :
+- **Vercel** (recommandé pour Next.js)
+- **Netlify**
+- **AWS Amplify**
+- **Tout autre service supportant Node.js**
+
+### Variables d'environnement pour la production
+```env
+# Pour l'envoi d'emails (selon le service choisi)
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
+# ou
+EMAIL_USER=votre_email@gmail.com
+EMAIL_PASS=votre_mot_de_passe_application
+```
+
+## 🔗 Liens utiles
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Resend (Email Service)](https://resend.com)
+- [Nodemailer](https://nodemailer.com/)
+
+---
+
+**Développé par Damien Drozd** - Développeur Web 3.0
