@@ -85,7 +85,7 @@ export default function CVSection() {
                 </svg>
               </div>
               <p className="text-gray-300 mb-4">
-                Impossible d'afficher le PDF dans ce navigateur. 
+                Impossible d&apos;afficher le PDF dans ce navigateur. 
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
@@ -110,7 +110,7 @@ export default function CVSection() {
           <noscript>
             <div className="text-center p-8 bg-gray-800 rounded-lg mt-4">
               <p className="text-gray-300 mb-4">
-                Votre navigateur ne supporte pas l'affichage des PDF. 
+                Votre navigateur ne supporte pas l&apos;affichage des PDF. 
               </p>
               <a
                 href={cvPath}
@@ -127,7 +127,7 @@ export default function CVSection() {
         {/* Note informative */}
         <div className="text-center mt-6">
           <p className="text-gray-400 text-sm">
-            💡 Astuce : Utilisez les contrôles du lecteur PDF pour zoomer, naviguer entre les pages et ajuster l'affichage
+            💡 Astuce : Utilisez les contrôles du lecteur PDF pour zoomer, naviguer entre les pages et ajuster l&apos;affichage
           </p>
         </div>
       </div>

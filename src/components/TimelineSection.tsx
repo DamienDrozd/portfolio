@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import TimelineItem from './TimelineItem';
-import { getFilteredTimelineData, getTimelineStats, type TimelineData } from '../data/timeline';
+import { getFilteredTimelineData, getTimelineStats } from '../data/timeline';
 
 export default function TimelineSection() {
   const [filter, setFilter] = useState<'all' | 'projects' | 'experiences'>('all');
@@ -17,22 +17,6 @@ export default function TimelineSection() {
         <p className="text-gray-300 text-lg mb-4">
           Découvrez mon parcours professionnel et mes projets personnels dans une frise chronologique
         </p>
-        
-        {/* Statistiques */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm">
-          <span className="bg-gray-800 px-3 py-1 rounded-full text-gray-300">
-            📊 {stats.total} éléments au total
-          </span>
-          <span className="bg-gray-800 px-3 py-1 rounded-full text-gray-300">
-            🚀 {stats.projects} projets
-          </span>
-          <span className="bg-gray-800 px-3 py-1 rounded-full text-gray-300">
-            💼 {stats.experiences} expériences
-          </span>
-          <span className="bg-gray-800 px-3 py-1 rounded-full text-gray-300">
-            ⚡ {stats.technologiesCount} technologies
-          </span>
-        </div>
         
         {/* Filtres */}
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 px-4">

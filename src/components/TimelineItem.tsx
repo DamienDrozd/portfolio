@@ -22,7 +22,7 @@ interface TimelineItemProps {
   isLeft: boolean;
 }
 
-export default function TimelineItem({ data, index, isLeft }: TimelineItemProps) {
+export default function TimelineItem({ data, isLeft }: TimelineItemProps) {
   const isProject = data.type === 'project';
   
   return (

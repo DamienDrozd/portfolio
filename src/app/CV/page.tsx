@@ -1,7 +1,6 @@
 'use client';
 
 import CVSection from "@/components/CVSection";
-import ExperiencesSection from "@/components/ExperiencesSection";
 
 export default function Home() {
   return (

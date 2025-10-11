@@ -9,7 +9,7 @@ export default function ProjectsSection() {
       <h2 className="text-[#FFC300] text-3xl font-bold mb-8">Projets personnels</h2>
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <ProjectCard
               key={project.id}
               title={project.title}
