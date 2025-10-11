@@ -9,14 +9,11 @@ interface RevealAnimationProps {
 
 export default function RevealAnimation({ isVisible, children }: RevealAnimationProps) {
   const [showContent, setShowContent] = useState(false);
-  const [showParticles, setShowParticles] = useState(false);
 
   useEffect(() => {
     if (isVisible) {
       // Déclencher l'animation de rideau
       setTimeout(() => setShowContent(true), 200);
-      // Déclencher les particules
-      setTimeout(() => setShowParticles(true), 800);
     }
   }, [isVisible]);
 

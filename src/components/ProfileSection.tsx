@@ -4,7 +4,7 @@ export default function ProfileSection() {
   return (
     <div className="flex items-center justify-center mt-32 mb-24">
       <Image 
-        src="/media/photo pro carré.JPG" 
+        src="/media/photo-pro-carre.jpg" 
         alt="profile" 
         width={150} 
         height={150}

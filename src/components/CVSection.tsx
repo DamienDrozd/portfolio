@@ -66,7 +66,7 @@ export default function CVSection() {
       initLoad();
     }
     return clearCurrentTimeout;
-  }, [loadingState, startTimeout, clearCurrentTimeout, checkPdfExists]);
+  }, [loadingState, startTimeout, clearCurrentTimeout, checkPdfExists, retryCount]);
 
   const handleDownload = () => {
     const link = document.createElement('a');
