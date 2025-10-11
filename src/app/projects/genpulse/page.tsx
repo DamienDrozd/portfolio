@@ -1,4 +1,4 @@
-import Link from "next/link";
+import BackButton from "../../../components/BackButton";
 
 export default function GenPulsePage() {
   return (
@@ -16,12 +16,7 @@ export default function GenPulsePage() {
             <span className="bg-[#FFC300] text-[#000814] px-4 py-2 rounded-lg font-semibold">TypeScript</span>
             <span className="bg-[#FFC300] text-[#000814] px-4 py-2 rounded-lg font-semibold">Architecture</span>
           </div>
-          <Link 
-            href="/"
-            className="inline-flex items-center text-[#FFC300] hover:text-[#FFD700] transition-colors"
-          >
-            ← Retour à l&apos;accueil
-          </Link>
+          <BackButton />
         </div>
 
         {/* Description du projet */}

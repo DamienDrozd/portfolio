@@ -8,7 +8,6 @@ export default function TimelineSection() {
   const [filter, setFilter] = useState<'all' | 'projects' | 'experiences'>('all');
   
   const filteredData = getFilteredTimelineData(filter);
-  const stats = getTimelineStats();
 
   return (
     <div className="mb-16">
