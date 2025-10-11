@@ -1,6 +1,24 @@
 import BackButton from "../../../components/BackButton";
 import ExternalLinks from "../../../components/ExternalLinks";
 import { getProjectBySlug } from "../../../data/projects";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "RetroGameCollec - Application pour Collectionneurs",
+  description: "RetroGameCollec est une application web pour collectionneurs de jeux vidéo rétro, développée avec Next.js et MongoDB, utilisant l'API IGDB.",
+  keywords: ["RetroGameCollec", "jeux vidéo", "collection", "rétro gaming", "Next.js", "MongoDB", "IGDB API", "collectionneurs"],
+  openGraph: {
+    title: "RetroGameCollec - Application pour Collectionneurs | Damien Drozd",
+    description: "Découvrez RetroGameCollec, une application web dédiée aux collectionneurs de jeux vidéo rétro.",
+    url: "https://damien-drozd.fr/projects/retrogamecollec",
+    type: "article",
+  },
+  twitter: {
+    card: "summary",
+    title: "RetroGameCollec - Application pour Collectionneurs",
+    description: "Découvrez RetroGameCollec, une application web dédiée aux collectionneurs de jeux vidéo rétro.",
+  }
+};
 
 export default function RetroGameCollecPage() {
   const project = getProjectBySlug('retrogamecollec');

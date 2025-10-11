@@ -1,6 +1,24 @@
 import BackButton from "../../../components/BackButton";
 import ExternalLinks from "../../../components/ExternalLinks";
 import { getProjectBySlug } from "../../../data/projects";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "GenPulse - Plateforme Web Innovante",
+  description: "GenPulse est une plateforme web innovante que j'ai cofondée et développée de A à Z avec Next.js et Fastify. Découvrez ce projet entrepreneurial.",
+  keywords: ["GenPulse", "plateforme web", "Next.js", "Fastify", "startup", "cofondateur", "développement web"],
+  openGraph: {
+    title: "GenPulse - Plateforme Web Innovante | Damien Drozd",
+    description: "Découvrez GenPulse, une plateforme web innovante développée avec Next.js et Fastify.",
+    url: "https://damien-drozd.fr/projects/genpulse",
+    type: "article",
+  },
+  twitter: {
+    card: "summary",
+    title: "GenPulse - Plateforme Web Innovante",
+    description: "Découvrez GenPulse, une plateforme web innovante développée avec Next.js et Fastify.",
+  }
+};
 
 export default function GenPulsePage() {
   const project = getProjectBySlug('genpulse');

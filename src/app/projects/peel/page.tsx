@@ -1,6 +1,24 @@
 import BackButton from "../../../components/BackButton";
 import ExternalLinks from "../../../components/ExternalLinks";
 import { getProjectBySlug } from "../../../data/projects";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "PEEL - Application de Rencontre Mobile",
+  description: "PEEL est une application de rencontre mobile centrée sur la compatibilité réelle, développée en React Native avec un algorithme de matching innovant.",
+  keywords: ["PEEL", "application mobile", "React Native", "rencontre", "dating app", "matching", "iOS", "Android"],
+  openGraph: {
+    title: "PEEL - Application de Rencontre Mobile | Damien Drozd",
+    description: "Découvrez PEEL, une application de rencontre mobile révolutionnaire développée en React Native.",
+    url: "https://damien-drozd.fr/projects/peel",
+    type: "article",
+  },
+  twitter: {
+    card: "summary",
+    title: "PEEL - Application de Rencontre Mobile",
+    description: "Découvrez PEEL, une application de rencontre mobile révolutionnaire développée en React Native.",
+  }
+};
 
 export default function PEELPage() {
   const project = getProjectBySlug('peel');

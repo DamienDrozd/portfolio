@@ -1,6 +1,24 @@
 import BackButton from "../../../components/BackButton";
 import ExternalLinks from "../../../components/ExternalLinks";
 import { getExperienceBySlug } from "../../../data/experiences";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "LaWEbox - Développeur Full Stack & Data Scientist",
+  description: "Mon expérience en tant que développeur full stack et data scientist chez LaWEbox. Conception d'APIs REST, interfaces back-office et projets data avec Django et Flask.",
+  keywords: ["LaWEbox", "développeur full stack", "data scientist", "Django", "Flask", "Python", "Paris", "APIs REST", "machine learning"],
+  openGraph: {
+    title: "Expérience LaWEbox - Développeur Full Stack & Data Scientist | Damien Drozd",
+    description: "Découvrez mon expérience professionnelle chez LaWEbox combinant développement web et data science.",
+    url: "https://damien-drozd.fr/experiences/lawebox",
+    type: "article",
+  },
+  twitter: {
+    card: "summary",
+    title: "Expérience LaWEbox - Développeur Full Stack & Data Scientist",
+    description: "Découvrez mon expérience professionnelle chez LaWEbox combinant développement web et data science.",
+  }
+};
 
 export default function LaWEboxPage() {
   const experience = getExperienceBySlug('lawebox');

@@ -7,7 +7,7 @@ export const portfolioConfig = {
     name: 'Damien Drozd',
     title: 'Développeur Full Stack',
     location: 'Lille, France',
-    email: 'contact@damiendrozd.fr',
+    email: 'contact@damien-drozd.fr',
     linkedin: 'https://linkedin.com/in/damien-drozd',
     github: 'https://github.com/DamienDrozd'
   },

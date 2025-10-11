@@ -1,6 +1,24 @@
 import BackButton from "../../../components/BackButton";
 import ExternalLinks from "../../../components/ExternalLinks";
 import { getExperienceBySlug } from "../../../data/experiences";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Reconomia - Développeur Fullstack en Alternance",
+  description: "Mon expérience en tant que développeur web fullstack en alternance chez Reconomia. Développement d'applications React Native et APIs FastAPI sur Azure.",
+  keywords: ["Reconomia", "alternance", "développeur fullstack", "React Native", "FastAPI", "Azure", "Lille", "économie circulaire"],
+  openGraph: {
+    title: "Expérience Reconomia - Développeur Fullstack | Damien Drozd",
+    description: "Découvrez mon expérience professionnelle chez Reconomia en tant que développeur fullstack.",
+    url: "https://damien-drozd.fr/experiences/reconomia",
+    type: "article",
+  },
+  twitter: {
+    card: "summary",
+    title: "Expérience Reconomia - Développeur Fullstack",
+    description: "Découvrez mon expérience professionnelle chez Reconomia en tant que développeur fullstack.",
+  }
+};
 
 export default function ReconomiaPage() {
   const experience = getExperienceBySlug('reconomia');

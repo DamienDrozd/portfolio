@@ -1,6 +1,24 @@
 import BackButton from "../../../components/BackButton";
 import ExternalLinks from "../../../components/ExternalLinks";
 import { getExperienceBySlug } from "../../../data/experiences";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mission Freelance - Développeur NextJS Accessibilité",
+  description: "Mission freelance pour développer un site web accessible aux personnes sourdes et mal voyantes avec Next.js et Firebase. Conformité WCAG et CMS intégré.",
+  keywords: ["freelance", "accessibilité", "WCAG", "Next.js", "Firebase", "site web accessible", "personnes sourdes", "malvoyantes", "développeur web"],
+  openGraph: {
+    title: "Mission Freelance - Développeur NextJS Accessibilité | Damien Drozd",
+    description: "Découvrez ma mission freelance pour développer un site web accessible avec Next.js et Firebase.",
+    url: "https://damien-drozd.fr/experiences/freelance",
+    type: "article",
+  },
+  twitter: {
+    card: "summary",
+    title: "Mission Freelance - Développeur NextJS Accessibilité",
+    description: "Découvrez ma mission freelance pour développer un site web accessible avec Next.js et Firebase.",
+  }
+};
 
 export default function FreelancePage() {
   const experience = getExperienceBySlug('freelance');
