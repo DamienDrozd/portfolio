@@ -19,8 +19,8 @@ export async function sendEmail({ name, email, message }: EmailParams) {
 
     const mailOptions = {
         from: email,
-        to: 'damien200191@gmail.com',
-        subject: `Contact RetroGameCollec - ${name}`,
+        to: 'damien.drozd@icloud.com',
+        subject: `Contact Portfolio - ${name}`,
         replyTo: email,
         html: `<p><b>Nom:</b> ${name}</p>
            <p><b>Email:</b> ${email}</p>
