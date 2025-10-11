@@ -2,8 +2,7 @@
 
 import ProfileSection from "../components/ProfileSection";
 import ResumeSection from "../components/ResumeSection";
-import ProjectsSection from "../components/ProjectsSection";
-import ExperiencesSection from "../components/ExperiencesSection";
+import TimelineSection from "../components/TimelineSection";
 import SkillsSection from "../components/SkillsSection";
 import SoftSkillsSection from "../components/SoftSkillsSection";
 import CVSection from "../components/CVSection";
@@ -21,11 +20,8 @@ export default function Home() {
       {/* Resume Section */}
       <ResumeSection />
 
-      {/* Projets personnels */}
-      <ProjectsSection />
-
-      {/* Expériences professionnelles */}
-      <ExperiencesSection />
+      {/* Timeline - Projets et Expériences */}
+      <TimelineSection />
 
       {/* Competences Section */}
       <SkillsSection />
