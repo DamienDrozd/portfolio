@@ -1,0 +1,24 @@
+{
+  "name": "Damien Drozd - Portfolio Développeur Full Stack",
+  "short_name": "Damien Drozd",
+  "description": "Portfolio de Damien Drozd, développeur Full Stack spécialisé en React, Next.js, React Native et Python",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000814",
+  "theme_color": "#FFC300",
+  "icons": [
+    {
+      "src": "/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["productivity", "business"],
+  "lang": "fr",
+  "orientation": "portrait-primary"
+}
