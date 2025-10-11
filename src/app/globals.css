@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Styles personnalisés pour les couleurs de votre thème */
 :root {
   --primary-bg: #000814;
