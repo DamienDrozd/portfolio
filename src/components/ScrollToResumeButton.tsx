@@ -15,17 +15,6 @@ export default function ScrollToResumeButton({ onShowResume }: ScrollToResumeBut
     // D'abord montrer la ResumeSection
     onShowResume();
     
-    // Attendre un peu que le composant soit rendu avant de scroller
-    setTimeout(() => {
-      const resumeElement = document.getElementById('resume-section');
-      if (resumeElement) {
-        resumeElement.scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    }, 100);
-    
     // Réinitialiser l'état après l'animation
     setTimeout(() => setIsScrolling(false), 1000);
   };

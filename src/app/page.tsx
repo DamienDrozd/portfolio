@@ -9,10 +9,11 @@ import TimelineSection from "../components/TimelineSection";
 import SkillsSection from "../components/SkillsSection";
 import SoftSkillsSection from "../components/SoftSkillsSection";
 import CVSection from "../components/CVSection";
+import StructuredData from "../components/StructuredData";
+import RevealAnimation from "../components/RevealAnimation";
 
 export default function Home() {
   const [showResumeSection, setShowResumeSection] = useState(false);
-  const [scrollDebug, setScrollDebug] = useState({ scrollY: 0, percentage: 0 });
   
   // Utiliser le hook personnalisé comme alternative
   const scrollTriggered = useScrollTrigger(400);
@@ -26,10 +27,7 @@ export default function Home() {
       // Calculer le pourcentage de scroll
       const scrollPercentage = scrollPosition / (documentHeight - windowHeight);
       
-      // Mise à jour du debug (temporaire)
-      setScrollDebug({ scrollY: scrollPosition, percentage: Math.round(scrollPercentage * 100) });
-      
-      // Révéler la section si l'utilisateur a scrollé plus de 20% de la page
+      // Révéler la section si l'utilisateur a scrollé plus de 15% de la page
       // ou s'il a scrollé plus de 300px
       if (scrollPercentage > 0.15 || scrollPosition > 400) {
         setShowResumeSection(true);
@@ -68,31 +66,45 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#000814] text-white">
-      {/* Profile Section */}
-      <ProfileSection />
+    <>
+      {/* Données structurées pour le SEO */}
+      <StructuredData />
 
-      {/* Scroll to Resume Button */}
-      <ScrollToResumeButton onShowResume={handleShowResume} />
+      <div className="min-h-screen bg-[#000814] text-white">
+        {/* Profile Section */}
+        <ProfileSection />
 
-      {showResumeSection && (
-        <div className="animate-fade-in-up">
-          {/* Resume Section - Conditionnel */}
-          <ResumeSection />
+        {!showResumeSection && (
+          <ScrollToResumeButton onShowResume={handleShowResume} />
+        )}
 
-          {/* Timeline - Projets et Expériences */}
-          <TimelineSection />
-
-          {/* Competences Section */}
-          <SkillsSection />
-
-          {/* Soft Skills Section */}
-          <SoftSkillsSection />
-
-          {/* CV Section */}
-          <CVSection />
+        {/* Contenu SEO-friendly - Toujours présent dans le DOM */}
+        <div
+          className={`transition-opacity duration-500 ${
+            showResumeSection
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none h-0 overflow-hidden"
+          }`}
+          aria-hidden={!showResumeSection}
+        >
+          <RevealAnimation isVisible={showResumeSection}>
+            {/* Resume Section avec animation bounce */}
+            <div
+              className={`${
+                showResumeSection
+                  ? "animate-fade-in-up animation-delay-100"
+                  : "animate-on-reveal"
+              }`}
+            >
+              <ResumeSection />
+              <TimelineSection />
+              <SkillsSection />
+              <SoftSkillsSection />
+              <CVSection />
+            </div>
+          </RevealAnimation>
         </div>
-      )}
-    </div>
+      </div>
+    </>
   );
 }

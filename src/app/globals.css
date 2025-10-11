@@ -23,7 +23,7 @@ body {
   transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Animation pour l'apparition de la ResumeSection */
+/* Animations pour l'apparition progressive du contenu */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -35,6 +35,21 @@ body {
   }
 }
 
+/* Classes d'animation avec délais */
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Délais pour animation en cascade */
+.animation-delay-100 { animation-delay: 0.1s; }
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-300 { animation-delay: 0.3s; }
+.animation-delay-400 { animation-delay: 0.4s; }
+.animation-delay-500 { animation-delay: 0.5s; }
+.animation-delay-600 { animation-delay: 0.6s; }
+.animation-delay-700 { animation-delay: 0.7s; }
+
+/* État initial des animations */
+.animate-on-reveal {
+  opacity: 0;
 }
