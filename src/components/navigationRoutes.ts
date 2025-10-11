@@ -15,7 +15,8 @@ export const navigationRoutes: {
         { href: "/", label: "Accueil" },
         { href: "/experiences", label: "Expériences" },
         { href: "/projects", label: "Projets" },
-        { href: "/contact", label: "Contact" }
+        { href: "/contact", label: "Contact" },
+        { href: "/CV", label: "CV" }
     ],
     external: [
         { 
