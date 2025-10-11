@@ -60,17 +60,17 @@ export default function CVSection() {
         <div className="flex items-center gap-2">
           <button
             onClick={() => setPageNumber(prev => Math.max(prev - 1, 1))}
-            disabled={pageNumber <= 1}
+            disabled={pageNumber <= 1 || numPages === 0}
             className="px-4 py-2 bg-[#FFC300] text-[#000814] rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#FFD700] transition-colors"
           >
             ← Précédent
           </button>
           <span className="text-white px-4">
-            Page {pageNumber} sur {numPages}
+            {numPages > 0 ? `Page ${pageNumber} sur ${numPages}` : 'Chargement...'}
           </span>
           <button
             onClick={() => setPageNumber(prev => Math.min(prev + 1, numPages))}
-            disabled={pageNumber >= numPages}
+            disabled={pageNumber >= numPages || numPages === 0}
             className="px-4 py-2 bg-[#FFC300] text-[#000814] rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#FFD700] transition-colors"
           >
             Suivant →
