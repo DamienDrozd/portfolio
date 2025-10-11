@@ -1,32 +1,8 @@
 import ProjectCard from "./ProjectCard";
+import { getProjectsSortedByYear } from "../data/projects";
 
 export default function ProjectsSection() {
-  const projects = [
-    {
-      title: "GenPulse",
-      period: "2023 - Actuel",
-      description: "Plateforme web innovante cofondée et développée de A à Z. Pilotage complet du développement web avec Next.js et Fastify.",
-      technologies: ["Next.js", "Fastify", "Architecture"],
-      features: "Plateforme complète, infrastructure web, expérience utilisateur optimale",
-      slug: "genpulse"
-    },
-    {
-      title: "RetroGameCollec",
-      period: "2025",
-      description: "Application pour collectionneurs de jeux vidéo rétro. Gestion de collections, découverte de titres et interaction communautaire.",
-      technologies: ["Next.js", "MongoDB", "IGDB API"],
-      features: "Collections, recherche, partage, SEO optimisé",
-      slug: "retrogamecollec"
-    },
-    {
-      title: "PEEL",
-      period: "2022 - 2024",
-      description: "Application de rencontre mobile centrée sur la compatibilité réelle. Matching basé sur centres d'intérêt et activités communes.",
-      technologies: ["React Native", "API REST", "Push Notifications"],
-      features: "Swipe, matching, messagerie, App Store/Google Play",
-      slug: "peel"
-    }
-  ];
+  const projects = getProjectsSortedByYear();
 
   return (
     <div className="text-center mb-16">
@@ -35,7 +11,7 @@ export default function ProjectsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <ProjectCard
-              key={index}
+              key={project.id}
               title={project.title}
               period={project.period}
               description={project.description}

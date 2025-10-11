@@ -15,8 +15,7 @@ export default function ProfileSection() {
         <h2 className="text-white text-2xl mb-2">Développeur Web Full Stack</h2>
         <p className="text-gray-300 text-lg">Montpellier, France</p>
         <div className="flex space-x-4 mt-2">
-          <span className="text-[#FFC300]">📞 +33 7 87 27 71 92</span>
-          <span className="text-[#FFC300]">📧 damien.drozd@icloud.com</span>
+          <span className="text-[#FFC300]">damien.drozd@icloud.com</span>
         </div>
       </div>
     </div>

@@ -57,9 +57,6 @@ export default function Contact() {
             <div className="text-white mb-4">
               Email : damien.drozd@icloud.com 
             </div>
-            <div className="text-white mb-4">
-              Téléphone : 07 87 27 71 92
-            </div>
             <div className="flex space-x-4">
               <a 
                 className="text-[#FFC300] hover:text-[#FFD700] transition-colors" 
