@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import TimelineItem from './TimelineItem';
-import { getFilteredTimelineData, getTimelineStats } from '../data/timeline';
+import { getFilteredTimelineData } from '../data/timeline';
 
 export default function TimelineSection() {
   const [filter, setFilter] = useState<'all' | 'projects' | 'experiences'>('all');
