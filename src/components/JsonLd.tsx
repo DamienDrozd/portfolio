@@ -16,7 +16,7 @@ export default function JsonLd() {
     ],
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Lille',
+      addressLocality: 'Montpellier',
       addressCountry: 'FR'
     },
     knowsAbout: [

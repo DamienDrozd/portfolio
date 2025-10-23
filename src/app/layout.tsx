@@ -7,11 +7,26 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Damien Drozd - Développeur Full Stack",
-    template: "%s | Damien Drozd - Développeur Full Stack"
+    default: "Damien Drozd - Développeur Web Freelance | React, Next.js, Python",
+    template: "%s | Damien Drozd - Développeur Web Freelance"
   },
-  description: "Portfolio de Damien Drozd, développeur Full Stack spécialisé en React, Next.js, React Native et Python. Découvrez mes projets et expériences professionnelles.",
-  keywords: ["Damien Drozd", "développeur", "full stack", "React", "Next.js", "React Native", "Python", "FastAPI", "portfolio", "Lille"],
+  description: "Développeur web freelance spécialisé en React, Next.js, React Native et Python. Création d'applications web modernes et sites vitrine optimisés SEO. Basé à Montpellier, disponible en remote. Portfolio et projets de Damien Drozd.",
+  keywords: [
+    // Mots-clés principaux pour développeur web
+    "développeur web", "développeur web freelance", "développeur web Montpellier", 
+    "développeur React", "développeur Next.js", "développeur JavaScript",
+    "développeur Python", "développeur full stack",
+    // Spécialités techniques
+    "création site web", "application web", "développement web moderne",
+    "React Native", "FastAPI", "Django", "TypeScript",
+    // Services freelance
+    "freelance développement web", "consultant développeur", "expert React",
+    "développement site vitrine", "application mobile", "SEO technique",
+    // Localisation
+    "développeur web Montpellier", "développeur freelance France", "remote développeur",
+    // Nom et marque
+    "Damien Drozd", "portfolio développeur", "projets web"
+  ],
   authors: [{ name: "Damien Drozd" }],
   creator: "Damien Drozd",
   publisher: "Damien Drozd",
@@ -30,16 +45,28 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://damien-drozd.fr",
-    title: "Damien Drozd - Développeur Full Stack",
-    description: "Portfolio de Damien Drozd, développeur Full Stack spécialisé en React, Next.js, React Native et Python.",
-    siteName: "Portfolio Damien Drozd",
+    title: "Damien Drozd - Développeur Web Freelance | React, Next.js, Python",
+    description: "Développeur web freelance spécialisé en React, Next.js, React Native et Python. Création d'applications web modernes et sites vitrine optimisés SEO.",
+    siteName: "Damien Drozd - Développeur Web",
+    images: [
+      {
+        url: "/media/photo-pro-carre.jpg",
+        width: 400,
+        height: 400,
+        alt: "Damien Drozd - Développeur Web Freelance",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Damien Drozd - Développeur Full Stack",
-    description: "Portfolio de Damien Drozd, développeur Full Stack spécialisé en React, Next.js, React Native et Python.",
+    title: "Damien Drozd - Développeur Web Freelance",
+    description: "Développeur web freelance spécialisé en React, Next.js, React Native et Python. Création d'applications web modernes.",
+    images: ["/media/photo-pro-carre.jpg"],
   },
   metadataBase: new URL("https://damien-drozd.fr"),
+  alternates: {
+    canonical: "https://damien-drozd.fr",
+  },
 };
 
 export default function RootLayout({

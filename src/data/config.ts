@@ -6,7 +6,7 @@ export const portfolioConfig = {
   personal: {
     name: 'Damien Drozd',
     title: 'Développeur Full Stack',
-    location: 'Lille, France',
+    location: 'Montpellier, France',
     email: 'contact@damien-drozd.fr',
     linkedin: 'https://linkedin.com/in/damien-drozd',
     github: 'https://github.com/DamienDrozd'
@@ -48,7 +48,7 @@ export const portfolioConfig = {
   seo: {
     title: 'Damien Drozd - Développeur Full Stack',
     description: 'Portfolio de Damien Drozd, développeur Full Stack spécialisé en React, Next.js, Node.js et Python.',
-    keywords: ['développeur', 'fullstack', 'react', 'nextjs', 'nodejs', 'python', 'lille'],
+    keywords: ['développeur', 'fullstack', 'react', 'nextjs', 'nodejs', 'python', 'montpellier'],
     author: 'Damien Drozd'
   },
 

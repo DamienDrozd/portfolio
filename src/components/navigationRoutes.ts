@@ -13,6 +13,7 @@ export const navigationRoutes: {
 } = {
     internal: [
         { href: "/", label: "Accueil" },
+        { href: "/about", label: "À propos" },
         { href: "/experiences", label: "Expériences" },
         { href: "/projects", label: "Projets" },
         { href: "/contact", label: "Contact" },

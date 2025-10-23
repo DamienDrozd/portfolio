@@ -21,7 +21,7 @@ export default function ResumeSection() {
                 clipRule="evenodd"
               />
             </svg>
-            Développeur Full Stack Certifié
+            Développeur Web Freelance Certifié
           </span>
         </div>
 
@@ -30,9 +30,9 @@ export default function ResumeSection() {
           {/* Titre animé */}
           <div className="mb-8 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Architecte de{" "}
+              Développeur Web{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFC300] to-[#FFD60A]">
-                Solutions Digitales
+                Freelance Expert
               </span>
             </h2>
             <div className="h-1 w-24 bg-gradient-to-r from-[#FFC300] to-[#FFD60A] mx-auto rounded-full"></div>
@@ -42,21 +42,18 @@ export default function ResumeSection() {
           <div className="space-y-6 text-lg sm:text-xl text-gray-300 leading-relaxed">
             <p className="text-center max-w-4xl mx-auto">
               <span className="text-white font-semibold">
-                Développeur web Full Stack
-              </span>
-              , je conçois et pilote des plateformes performantes orientées
-              produit. Ma passion pour l&apos;innovation me pousse à créer des
-              solutions qui allient
-              <span className="text-[#FFC300] font-medium">
-                {" "}
-                excellence technique
+                Développeur web freelance
               </span>{" "}
-              et
+              basé à Montpellier, je créé des{" "}
               <span className="text-[#FFC300] font-medium">
-                {" "}
-                expérience utilisateur
-              </span>
-              .
+                applications web modernes
+              </span>{" "}
+              et des{" "}
+              <span className="text-[#FFC300] font-medium">
+                sites performants
+              </span>{" "}
+              avec React, Next.js et Python. Spécialisé dans l&apos;optimisation SEO 
+              et l&apos;expérience utilisateur pour maximiser votre présence en ligne.
             </p>
 
             <div className="grid md:grid-cols-1 gap-8 mt-8">
